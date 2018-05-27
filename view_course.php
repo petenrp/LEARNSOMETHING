@@ -1,6 +1,6 @@
 <?php
     // DEBUG
-    // ini_set('display_errors', 1);
+    ini_set('display_errors', 1);
 
     session_start();
     
@@ -20,7 +20,7 @@
 
     $strSQL = "SELECT * FROM purchased WHERE course_id = '$course_id' and user_id = '$user_id'";
     
-    echo $strSQL;
+    // echo $strSQL;
 
     $objQuery = mysqli_query($connection, $strSQL);
     $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
@@ -31,7 +31,7 @@
 	}
 	else
 	{
-            echo "Not purchased :)";
+            echo "purchased, enjoy :)";
 			// $_SESSION["first_name"] = $objResult["first_name"];
             // $_SESSION["last_name"] = $objResult["last_name"];
             // $_SESSION["email"] = $objResult["email"];
