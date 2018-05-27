@@ -7,9 +7,10 @@
     <iframe id="ytplayer" type="text/html" width="100%" height="auto"
   src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
   frameborder="0"></iframe>
-        <div>
-            <p class="indent">Course Title</p>
-            <p style="overflow:auto, width:90%, height:110px"> description: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+        <div style="margin: 10px ">
+            <p>Course Title</p>
+            <div style="margin: 25px 50px 50px 100px">describe: test.</div>
+            <br>
         </div>
     </div>
 </body>
