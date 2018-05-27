@@ -42,12 +42,14 @@
 	}
 	else
 	{
-			$_SESSION["UserID"] = $objResult["UserID"];
-			$_SESSION["Status"] = $objResult["Status"];
+			$_SESSION["first_name"] = $objResult["first_name"];
+            $_SESSION["last_name"] = $objResult["last_name"];
+            $_SESSION["email"] = $objResult["email"];
+            $_SESSION["password"] = $objResult["password"];
 
 			session_write_close();
 			
-			header("location:user_page.php");
+			header("location:main.php");
 	}
 	mysqli_close($connection);
 ?>

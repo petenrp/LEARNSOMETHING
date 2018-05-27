@@ -1,10 +1,12 @@
 <?php
-  if ($_SESSION["UserID"] == null) {
+  session_start();
+  if ($_SESSION["email"] == null) {
     header("location:login.php");
   }
   else {
-      echo $_SESSION["UserID"];
+      echo $_SESSION["email"];
   }
+  // session_write_close();
 ?>
 
 <html lang="en">
