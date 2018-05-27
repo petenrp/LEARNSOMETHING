@@ -30,7 +30,7 @@
     mysqli_select_db($connection, "LearnSomething");
     
     $strSQL = "SELECT * FROM users WHERE email = '".mysqli_real_escape_string($connection, $_POST['inputEmail'])."' 
-	and password = '".mysqli_real_escape_string($connection, $_POST['inputPassword'])."'";
+	and password = '".mysqli_real_escape_string($connection, md5($_POST['inputPassword']))."'";
     
     echo $strSQL;
 
