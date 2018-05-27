@@ -85,7 +85,7 @@
 <body style="background-color: #F4F1ED">
     <nav class="navbar navbar-fixed-top" style="width: 100%; height:70px; background: #191917">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="">
                 <img src="img/weblogo.png" alt="logo" style="Height:30px;">
             </a>
         </div>    
