@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
   </head>
 
@@ -20,44 +24,83 @@
     <p style="font-family: 'Tajawal', sans-serif; font-weight: bold; font-size: 40px; margin: 40px 75px;">My Course</p>
 
     <div class="owl-carousel owl-theme">
-    <div class="img/1.jpg"><h4>1</h4></div>
-    <div class="img/2.jpg"><h4>2</h4></div>
-    <div class="img/3.jpeg"><h4>3</h4></div>
-    <div class="img/4.jpg"><h4>4</h4></div>
-    <div class="img/5.jpg"><h4>5</h4></div>
-    <div class="img/6.jpg"><h4>6</h4></div>
-    <div class="img/7.jpeg"><h4>7</h4></div>
-    <div class="img/8.jpg"><h4>8</h4></div>
-    <div class="img/9.jpg"><h4>9</h4></div>
-    <div class="img/10.jpg"><h4>10</h4></div>
-    <div class="img/11.jpg"><h4>11</h4></div>
-    <div class="img/12.jpg"><h4>12</h4></div>
+        <div class="item course-item">
+            <img src="img/1.jpg"/>
+            <h4>1</h4>
+        </div>
+        <div class="item course-item">
+                <img src="img/2.jpg"/>
+                <h4>1</h4>
+        </div>
+        <div class="item course-item">
+            <img src="img/3.jpeg"/>
+            <h4>1</h4>
+        </div>
+        <div class="item course-item">
+            <img src="img/4.jpg"/>
+            <h4>1</h4>
+        </div>
+        <div class="item  course-item">
+            <img src="img/5.jpg"/>
+            <h4>1</h4>
+        </div>
+        <div class="item course-item">
+            <img src="img/6.jpg"/>
+            <h4>1</h4>
+        </div> 
+        <div class="item course-item">
+            <img src="img/7.jpeg"/>
+            <h4>1</h4>
+        </div>
+        <div class="item course-item">
+            <img src="img/8.jpg"/>
+            <h4>1</h4>
+        </div>
+        <div class="item course-item">
+            <img src="img/9.jpeg"/>
+            <h4>1</h4>
+        </div>
+        <div class="item course-item">
+            <img src="img/10.jpg"/>
+            <h4>1</h4>
+        </div>
+        <div class="item course-item">
+            <img src="img/11.jpg"/>
+            <h4>1</h4>
+        </div>
+        <div class="item course-item">
+            <img src="img/12.jpg"/>
+            <h4>1</h4>
+        </div>         
     </div>
 
     <div style="height: 2px; width: auto; margin-left: 5%; margin-top: 25px; margin-right: 5%; background: #191917"></div>
     <p style="font-family: 'Tajawal', sans-serif; font-weight: bold; font-size: 40px; margin: 25px 75px;">Explore</p>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- <script src="jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 
     <script>
-        $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:5
-            }
-        }
-    })
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                videoHeight: 100,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+        });
     </script>
     
   </body>
