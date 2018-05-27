@@ -1,6 +1,6 @@
 <?php
   if ($_SESSION["UserID"] != null) {
-    header("location:main.php");
+    header("location:homepage.php");
   }
 ?>
 
@@ -45,7 +45,7 @@
       <div align="right">
           NOT MEMBER?
           <!-- <div class="Register-Link"> -->
-            <a href="register.html">REGISTER</a>
+            <a href="register.php">REGISTER</a>
           <!-- </div> -->
       </div>
     </form>

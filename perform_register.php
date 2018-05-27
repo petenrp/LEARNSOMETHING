@@ -40,19 +40,19 @@
 	
 	if(!$objQuery)
 	{
-			echo "ERROR";
+		echo "ERROR";
 	}
 	else
 	{
-			echo "REGISTER COMPLETE";
-			$_SESSION["first_name"] = $first_name;
-            $_SESSION["last_name"] = $last_name;
-            $_SESSION["email"] = $email;
-            $_SESSION["password"] = $password;
+		echo "REGISTER COMPLETE";
+		$_SESSION["first_name"] = $first_name;
+		$_SESSION["last_name"] = $last_name;
+        $_SESSION["email"] = $email;
+        $_SESSION["password"] = $password;
 
-			session_write_close();
+		session_write_close();
 			
-			header("location:homepage.html");
+		header("location:homepage.php");
 	}
 	mysqli_close($connection);
 ?>
