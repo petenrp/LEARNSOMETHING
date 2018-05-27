@@ -10,7 +10,7 @@
     $last_name = mysqli_real_escape_string($connection, $_POST['inputLastname']);
     $email = mysqli_real_escape_string($connection, $_POST['inputEmail']);
     // $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
-    $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
+    $password = mysqli_real_escape_string($connection, md5($_POST['inputPassword']));
 
 	$strSQL = "INSERT INTO users (first_name, last_name, email, password)
 	VALUES ('$first_name', '$last_name', '$email', '$password')";
