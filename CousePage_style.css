@@ -1,8 +1,5 @@
 body{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 25%;
     background-color: white;
 }
 
@@ -10,4 +7,14 @@ body{
     text-align: left;
 }
 
-html{ background-color: black}
+html{
+     background-color: black
+    }
+    
+.indent{
+    text-indent: 50px;
+}
+
+.pad{
+    padding: 10px 10px;
+}
