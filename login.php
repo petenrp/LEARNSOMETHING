@@ -35,7 +35,7 @@
           <input type="checkbox" checked="checked" value="remember-me" class="txt2"> Remember me 
         </div>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit" href="account.html">LOGIN</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">LOGIN</button>
       <div align="right">
           NOT MEMBER? 
           <!-- <div class="Register-Link"> -->
