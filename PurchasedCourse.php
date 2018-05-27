@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/PurchasedCourse_style.css">
+    <link rel="stylesheet" href="css/Course_style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -27,28 +27,28 @@
   src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
   frameborder="0"></iframe>
         <div style="margin: 30px 30px">
-            <h3>Course Title</h3>
-            <div class="indent50"> <b>description:</b> bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
+            <h3 class="font">Course Title</h3>
+            <div class="indent50, font"> <b>description:</b> bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
             <br>
-            <div class="indent50"><b>by:_______</b></div>
+            <div class="indent50, font"><b>by:_______</b></div><br>
 
-            <p><b>Workshop-Schedule</b></p>
+            <p class="font"><b>Workshop-Schedule</b></p>
             (workshop-link)
 
-            <h3>Lession</h3>
-            <div class="h3_font_size, indent30"><b>Lession 1: </b>bla bla bla bla
+            <h3 class="font">Lession</h3>
+            <div class="h3_font_size, indent30. font"><b>Lession 1: </b>bla bla bla bla
             <button class="button" style="float: right">PLAY</button>
             </div><br>
             <hr>
             <br>
 
-            <div class="h3_font_size, indent30"><b>Lession 2: </b>bla bla bla bla
+            <div class="h3_font_size, indent30, font"><b>Lession 2: </b>bla bla bla bla
             <button class="button" style="float: right">PLAY</button>
             </div><br>
             <hr>
             <br>
 
-            <div class="h3_font_size, indent30"><b>Lession 3: </b>bla bla bla bla
+            <div class="h3_font_size, indent30, font"><b>Lession 3: </b>bla bla bla bla
             <button class="button" style="float: right">PLAY</button>
             </div><br>
             <hr>

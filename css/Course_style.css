@@ -20,7 +20,7 @@
 } */
 
 .h3_font_size{
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .indent30{
@@ -31,16 +31,19 @@
     background-color: #FFF200;
     border: none;
     color: black;
-    padding: 15px 32px;
+    padding: 5px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 1px 2px;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 900;
 }
 
-
+.font{
+    font-family: 'Tajawal', sans-serif; 
+    font-weight: bold;
+}
 
 
