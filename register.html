@@ -8,16 +8,23 @@
 
 </head>
 <body>
-    <p class="topRegister">Register</p>
-        <div>
+    <p class="top-Register">Register</p>
+        <div class="regis-Form">
             <form action="/action_page.php">
-                Firstname:<br>
-                <!-- <input type="text" name="firstname"> -->
+                <p>Firstname</p>
                 <textarea rows="1" cols="30" placeholder="Firstname..."></textarea>
                 <br>
-                Surname:<br>
-                <!-- <input type="text" name="Surname"> -->
+                <p>Surname</p>
                 <textarea rows="1" cols="30" placeholder="Surname..."></textarea>
+                <br>
+                <p>Email</p>
+                <textarea rows="1" cols="50" placeholder="example@example.com"></textarea>
+                <br>
+                <p>Password</p>
+                <textarea rows="1" cols="50" placeholder="password..."></textarea>
+                <br>
+                <p>Confirm password</p>
+                <textarea rows="1" cols="50" placeholder="re-enter your password..."></textarea>
                 <br><br>
                 <input type="submit" value="Submit">
             </form> 

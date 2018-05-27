@@ -5,6 +5,13 @@ body{
     margin-bottom: 50px;
 }
 
-.topRegister{
-    font-size: 65px;
+.top-Register{
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.regis-Form{
+    font-size: 18px;
+    /* color: red; */
 }
