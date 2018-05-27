@@ -1,4 +1,7 @@
 <?php
+    // DEBUG
+    ini_set('display_errors', 1);
+    
     session_start();
     
     $connection = mysqli_connect("localhost","root","1212312121");
