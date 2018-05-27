@@ -26,12 +26,12 @@
       </div>
 
       <div class="form-label-group">
-        <input id="inputLastname" name="inputLastname" class="form-control" placeholder="Lastname" required autofocus>
+        <input id="inputLastname" name="inputLastname" class="form-control" placeholder="Lastname" required>
         <label for="inputLastname">Lastname</label>
       </div>
 
       <div class="form-label-group">
-        <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required autofocus>
+        <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required>
         <label for="inputEmail">Email</label>
       </div>
 
@@ -42,7 +42,7 @@
 
       <div class="form-label-group">
         <input type="password" id="inputConfirmPassword" name="inputConfirmPassword" class="form-control" placeholder="ConfirmPassword" required>
-        <label for="inputConfirmPassword">ConfirmPassword</label>
+        <label for="inputConfirmPassword">Confirm Password</label>
       </div>
 
       <input class="btn btn-lg btn-primary btn-block" type="submit" name="Submit" value="Submit" />
@@ -60,7 +60,7 @@
 
           function validateForm() {
             if(password.value != confirm_password.value) {
-              confirm_password.setCustomValidity("Passwords Don't Match");
+              confirm_password.setCustomValidity("Passwords Doesn't Match");
               return false;
             } else {
               // confirm_password.setCustomValidity('');

@@ -1,16 +1,20 @@
 <?php
 	session_start();
 	
+	$first_name = $_POST['inputFirstname'];
+    $last_name = $_POST['inputLastname'];
+    $email = $_POST['inputEmail'];
+    // $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
+    $password = md5($_POST['inputPassword']);
+
 	$connection = mysqli_connect("localhost","root","1212312121");
     mysqli_select_db($connection, "LearnSomething");
 
-	// $strSQL = "SELECT * FROM registration WHERE Username = '".mysqli_real_escape_string($connection, $_POST['txtUsername'])."' 
-    // and Password = '".mysqli_real_escape_string($connection, $_POST['txtPassword'])."'";
-    $first_name = mysqli_real_escape_string($connection, $_POST['inputFirstname']);
-    $last_name = mysqli_real_escape_string($connection, $_POST['inputLastname']);
-    $email = mysqli_real_escape_string($connection, $_POST['inputEmail']);
+    $first_name = mysqli_real_escape_string($connection, $first_name);
+    $last_name = mysqli_real_escape_string($connection, $last_name);
+    $email = mysqli_real_escape_string($connection, $email);
     // $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
-    $password = mysqli_real_escape_string($connection, md5($_POST['inputPassword']));
+    $password = mysqli_real_escape_string($connection, $password);
 
 	$strSQL = "INSERT INTO users (first_name, last_name, email, password)
 	VALUES ('$first_name', '$last_name', '$email', '$password')";
