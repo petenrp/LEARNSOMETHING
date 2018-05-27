@@ -11,10 +11,36 @@ html{
      background-color: black
     }
     
-.indent{
+.indent50{
     text-indent: 50px;
 }
 
 .pad{
     padding: 10px 10px;
 }
+
+.h3_font_size{
+    font-size: 13px;
+}
+
+.indent30{
+    text-indent: 30px;
+}
+
+.button {
+    background-color: #FFF200;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 10px;
+    float: right;
+}
+
+
+
+
