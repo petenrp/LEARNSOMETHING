@@ -45,10 +45,10 @@
     <div class="img/6.jpg"><h4>6</h4></div>
     <div class="img/7.jpeg"><h4>7</h4></div>
     <div class="img/8.jpg"><h4>8</h4></div>
-    <div class="item"><h4>9</h4></div>
-    <div class="item"><h4>10</h4></div>
-    <div class="item"><h4>11</h4></div>
-    <div class="item"><h4>12</h4></div>
+    <div class="img/9.jpg"><h4>9</h4></div>
+    <div class="img/10.jpg"><h4>10</h4></div>
+    <div class="img/11.jpg"><h4>11</h4></div>
+    <div class="img/12.jpg"><h4>12</h4></div>
     </div>
 
     <div style="height: 2px; width: auto; margin-left: 5%; margin-top: 25px; margin-right: 5%; background: #191917"></div>
