@@ -131,23 +131,26 @@
 
             <h3 class="font">Lessons</h3>
             <div class="h3_font_size indent30 font">
-                <b>Lesson 1: </b>
-                bla bla bla bla
-                <button class="button" style="float: right">PLAY</button>
+                <h4>
+                    Lesson 1: bla bla bla bla
+                </h4>
+                <!-- <button class="button" style="float: right">PLAY</button> -->
             </div>
             <br><hr><br>
 
             <div class="h3_font_size indent30 font">
-                <b>Lesson 2: </b>
-                bla bla bla bla
-                <button class="button" style="float: right">PLAY</button>
+                <h4>
+                    Lesson 2: bla bla bla bla
+                </h4>
+                <!-- <button class="button" style="float: right">PLAY</button> -->
             </div>
             <br><hr><br>
 
             <div class="h3_font_size indent30 font">
-                <b>Lesson 3: </b>
-                bla bla bla bla
-                <button class="button" style="float: right">PLAY</button>
+                <h4>
+                    Lesson 3: bla bla bla bla
+                </h4>
+                <!-- <button class="button" style="float: right">PLAY</button> -->
             </div>
             <br><hr><br>
 
