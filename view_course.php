@@ -15,29 +15,31 @@
     $course_id = $_GET['id'];
     $user_id = $_SESSION['email'];
 
-    echo "course_id = $course_id";
-    echo "user_id = $user_id";
-    // $strSQL = "SELECT * FROM purchased WHERE email = '".mysqli_real_escape_string($connection, $_POST['inputEmail'])."' 
-	// and password = '".mysqli_real_escape_string($connection, md5($_POST['inputPassword']))."'";
+    // echo "course_id = $course_id\n";
+    // echo "user_id = $user_id";
+
+    $strSQL = "SELECT * FROM purchased WHERE course_id = '$course_id' and user_id = '$user_id'";
     
-    // echo $strSQL;
+    echo $strSQL;
 
-    // $objQuery = mysqli_query($connection, $strSQL);
-	// $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
-	// if(!$objResult)
-	// {
-	// 		echo "Username and Password Incorrect!";
-	// }
-	// else
-	// {
-	// 		$_SESSION["first_name"] = $objResult["first_name"];
-    //         $_SESSION["last_name"] = $objResult["last_name"];
-    //         $_SESSION["email"] = $objResult["email"];
-    //         $_SESSION["password"] = $objResult["password"];
+    $objQuery = mysqli_query($connection, $strSQL);
+    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+    
+	if(!$objResult)
+	{
+			echo "Not purchased";
+	}
+	else
+	{
+            echo "Not purchased :)";
+			// $_SESSION["first_name"] = $objResult["first_name"];
+            // $_SESSION["last_name"] = $objResult["last_name"];
+            // $_SESSION["email"] = $objResult["email"];
+            // $_SESSION["password"] = $objResult["password"];
 
-	// 		session_write_close();
+			// session_write_close();
 			
-	// 		header("location:index.php");
-	// }
-	// mysqli_close($connection);
+			// header("location:purchased.php");
+	}
+	mysqli_close($connection);
 ?>
