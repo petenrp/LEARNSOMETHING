@@ -98,7 +98,7 @@
             <h4 class="font">
                 BY &#9;<b><?php echo strtoupper($instructor_name) ?></b>
                 <br>
-                <p style="background: #ebebeb; color: #424242; width: fit-content; padding: 2 8px; margin-top: 32px; float: right">
+                <p style="background: #ebebeb; color: #424242; width: fit-content; padding: 2 8px; margin-top: 12px; float: right">
                     PURCHASED
                 </p>
             </h4>
