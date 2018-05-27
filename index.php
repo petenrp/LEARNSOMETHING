@@ -25,24 +25,24 @@
     $objQuery = mysqli_query($connection, $strSQL);
     $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
     
-    if(!$objResult)
-    {
-        echo "Not purchased";
-        header("location:notPurchasedCourse.php?id=$course_id");
-    }
-    else
-    {
-        echo "purchased, enjoy :)";
-        // $_SESSION["first_name"] = $objResult["first_name"];
-        // $_SESSION["last_name"] = $objResult["last_name"];
-        // $_SESSION["email"] = $objResult["email"];
-        // $_SESSION["password"] = $objResult["password"];
+    // if(!$objResult)
+    // {
+    //     echo "Not purchased";
+    //     header("location:notPurchasedCourse.php?id=$course_id");
+    // }
+    // else
+    // {
+    //     echo "purchased, enjoy :)";
+    //     // $_SESSION["first_name"] = $objResult["first_name"];
+    //     // $_SESSION["last_name"] = $objResult["last_name"];
+    //     // $_SESSION["email"] = $objResult["email"];
+    //     // $_SESSION["password"] = $objResult["password"];
 
-        // session_write_close();
+    //     // session_write_close();
         
-        header("location:PurchasedCourse.php?id=$course_id");
-    }
-    mysqli_close($connection);
+    //     header("location:PurchasedCourse.php?id=$course_id");
+    // }
+    // mysqli_close($connection);
 ?>
 
 <!DOCTYPE html>
@@ -87,7 +87,7 @@
         }
         echo "</table>";
     ?>
-    
+
     <div class="owl-carousel owl-theme">
         <div class="item">
             <img class="course-item" src="img/1.jpg"/>
