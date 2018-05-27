@@ -77,13 +77,43 @@
         // echo "code running";
         echo "<table>";
         while ($row = mysqli_fetch_array($objQuery, MYSQLI_ASSOC)) {
-          $title = $row['title'];
-          $description = $row['description'];
+          $course_id = $row['title'];
+
+          //
+          // FETCH COURSE DATA
+          //
+          $strSQL = "SELECT * FROM courses WHERE id = '$course_id'";
+          $courseQuery = mysqli_query($connection, $strSQL);
+          $courseResult = mysqli_fetch_array($courseQuery, MYSQLI_BOTH);
+
+          if(!$courseResult) {
+              // ERROR
+              echo "error fetching courses\n";
+          }
+          else {
+              $title = $courseResult["title"];
+              $description = $courseResult["description"];
+              $instructor_id = $courseResult["instructor_id"];
+          }
+
+          $strSQL = "SELECT * FROM instructors WHERE id = '$instructor_id'";
+          $instructorQuery = mysqli_query($connection, $strSQL);
+          $instructorResult = mysqli_fetch_array($instructorQuery, MYSQLI_BOTH);
+
+          if(!$instructorResult) {
+              // ERROR: just redirect to the index page
+              header("location:index.php");
+          }
+          else {
+              $instructor_name = $instructorResult["name"];
+          }
+
           // $content = $row['content'];
           // echo "<tr><td>$name</td><td>$address</td></tr>";
           // echo "<h1>$name</h1>";
           echo "<h3>$title</h3>";
-          echo "<p>$description</p>";
+          // echo "<p>$description</p>";
+          echo "<p>BY ".strtoupper($instructor_name)."</p>";
           echo "<br/>";
         }
         echo "</table>";
