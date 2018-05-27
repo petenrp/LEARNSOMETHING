@@ -1,7 +1,7 @@
 <?php
   session_start();
   if ($_SESSION["email"] != null) {
-    header("location:main.php");
+    header("location:homepage.html");
   }
   // session_write_close();
 ?>
