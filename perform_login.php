@@ -7,7 +7,7 @@
     $strSQL = "SELECT * FROM users WHERE email = '".mysqli_real_escape_string($connection, $_POST['inputEmail'])."' 
 	and password = '".mysqli_real_escape_string($connection, $_POST['inputPassword'])."'";
     
-    echo strSQL;
+    echo $strSQL;
 
     $objQuery = mysqli_query($connection, $strSQL);
 	$objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
