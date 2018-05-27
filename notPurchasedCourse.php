@@ -97,12 +97,6 @@
   src="https://www.youtube.com/watch?v=j3jsqKi9rtM"
   frameborder="0"></iframe>
         <div style="margin: 30px 30px">
-<<<<<<< HEAD
-            <h3 class="font">COOKING : Egg Muffin</h3>
-            <div class="indent50 font"><b>description:</b> bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
-            <br>
-            <div class="indent50 font"><b>by : Kaew (The Masterchef Thailand)</b>
-=======
             <h1 class="font">
                 <?php echo $title ?>
             </h1>
@@ -118,7 +112,6 @@
             <br>
             <br>
 
->>>>>>> ed7051921d729f9896086234d0ac809913fe0d10
             <button class="button" style="float: right">Buy</button>
 
             <!-- <button class="button" style="float: right">Buy</button> -->
@@ -156,7 +149,7 @@
                 <button class="button" style="float: right">PLAY</button>
             </div>
             <br><hr><br>
-            
+
         </div>
     </body>
 </html>
