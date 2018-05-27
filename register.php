@@ -8,6 +8,6 @@
 </head>
 <body>
     <p class="sizepx">Register</p>
-    <h1>Register</h1>
+    <p align="right"> isus</p>
 </body>
 </html>

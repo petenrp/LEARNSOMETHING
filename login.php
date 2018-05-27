@@ -29,9 +29,7 @@
       <div class="checkbox mb-3">
         <div>
           <input type="checkbox" checked="checked" value="remember-me" class="txt2"> Remember me 
-          
-             <span style="float: right;">NOT MEMBER? <a href="register.html">REGISTER</a></span>
-          
+          <span style="float: right;">NOT MEMBER? <a href="register.html">REGISTER</a></span>
         </div>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit" href="account.html">LOGIN</button>
