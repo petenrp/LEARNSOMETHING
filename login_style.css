@@ -6,6 +6,8 @@
 html,
 body {
   height: 100%;
+  font-family: 'Karla', sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 
 body {
@@ -86,4 +88,45 @@ body {
   font-size: 16px;
   color: #827ffe;
   line-height: 1.4;
+}
+
+.register {
+  margin-top: 20px;
+  margin-right: 0px;
+}
+.Register-Link {
+  /* height: 100%;
+  overflow: hidden; */
+  padding: 24px 16px;
+}
+.Register-Link a {
+  width: 100%;
+  height: fit-content;
+
+  font-family: 'Lulo-Clean-One-Bold';
+  padding: 14px 12px 12px 20px;
+  text-decoration: none;
+  font-size: 24px;
+  /* color: #f6f3e0; */
+  display: block;
+  transition: 0.15s;
+  /* transition-timing-function: ease-out; */
+  text-align: left;
+  
+  background-color: #FFD740;
+  height: fit-content;
+
+  border-radius: 4px;
+
+  /* margin-left: 8px; */
+  margin-right: 8px;
+}
+.Register-Link a:hover{
+  /* color: #f1f1f1; */
+  background-color: #FFC400;
+}
+
+.Register-Link a:active{
+  /* color: #f1f1f1; */
+  background-color: #FFAB00;
 }
