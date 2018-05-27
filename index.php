@@ -77,7 +77,7 @@
         // echo "code running";
         echo "<table>";
         while ($row = mysqli_fetch_array($objQuery, MYSQLI_ASSOC)) {
-          $course_id = $row['title'];
+          $course_id = $row['course_id'];
 
           //
           // FETCH COURSE DATA
@@ -94,18 +94,21 @@
               $title = $courseResult["title"];
               $description = $courseResult["description"];
               $instructor_id = $courseResult["instructor_id"];
-          }
 
-          $strSQL = "SELECT * FROM instructors WHERE id = '$instructor_id'";
-          $instructorQuery = mysqli_query($connection, $strSQL);
-          $instructorResult = mysqli_fetch_array($instructorQuery, MYSQLI_BOTH);
+              //
+              // FETCH INSTRUCTOR
+              //
+              $strSQL = "SELECT * FROM instructors WHERE id = '$instructor_id'";
+              $instructorQuery = mysqli_query($connection, $strSQL);
+              $instructorResult = mysqli_fetch_array($instructorQuery, MYSQLI_BOTH);
 
-          if(!$instructorResult) {
-            // ERROR
-            echo "error fetching instructor\n";
-          }
-          else {
-              $instructor_name = $instructorResult["name"];
+              if(!$instructorResult) {
+                // ERROR
+                echo "error fetching instructor\n";
+              }
+              else {
+                  $instructor_name = $instructorResult["name"];
+              }
           }
 
           // $content = $row['content'];
