@@ -38,7 +38,7 @@
     $objQuery = mysqli_query($connection, $strSQL);
     $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
 
-    if($objResult) {
+    if(!$objResult) {
         // ERROR: just redirect to the index page
         header("location:index.php");
     }
