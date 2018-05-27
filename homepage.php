@@ -1,5 +1,7 @@
 <?php
+  ini_set('display_errors', 1);
   session_start();
+  
   if ($_SESSION["email"] == null) {
     header("location:login.php");
   }
@@ -27,6 +29,16 @@
   //   $mycontent[] = $output;     
   // }
   // session_write_close();
+
+  echo "code running";
+  echo "<table>";
+  while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
+    $name   = $row['name'];
+    $address = $row['id'];
+    // $content = $row['content'];
+    echo "<tr><td>".$name."</td><td>".$address."</td><td>".$content."</td></tr>";
+  }
+  echo "</table>";
 ?>
 
 <html lang="en">
@@ -52,15 +64,15 @@
     </nav>
 
     <?php
-        echo "code running";
-        echo "<table>";
-        while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
-          $name   = $row['name'];
-          $address = $row['id'];
-          // $content = $row['content'];
-          echo "<tr><td>".$name."</td><td>".$address."</td><td>".$content."</td></tr>";
-        }
-        echo "</table>";
+        // echo "code running";
+        // echo "<table>";
+        // while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
+        //   $name   = $row['name'];
+        //   $address = $row['id'];
+        //   // $content = $row['content'];
+        //   echo "<tr><td>".$name."</td><td>".$address."</td><td>".$content."</td></tr>";
+        // }
+        // echo "</table>";
     ?>
     Welcome, you're already logged in :)
 
