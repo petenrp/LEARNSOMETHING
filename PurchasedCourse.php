@@ -107,8 +107,13 @@
             <br>
             <br>
 
+            <hr>
             <p class="font"><b>Workshop-Schedule</b></p>
             (workshop-link)
+            <hr>
+            
+            <br>
+            <br>
 
             <h3 class="font">Lessons</h3>
             <div class="h3_font_size indent30 font">
