@@ -1,11 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
@@ -15,7 +13,6 @@
 
     <form class="form-signin">
       <div class="text-center mb-4">
-        <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Login</h1>
       </div>
 
@@ -31,7 +28,7 @@
 
       <div class="checkbox mb-3">
         <div>
-          <input type="checkbox" value="remember-me" class="txt2"> Remember me <a href="register.html" class="txt1">Do not have an account?</a>
+          <input type="checkbox" value="remember-me" class="txt2"> Remember me <a href="register.html" class="txt1">REGISTER</a>
 
             </div>
 
