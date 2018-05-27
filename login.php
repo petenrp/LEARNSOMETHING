@@ -21,12 +21,12 @@
       </div>
 
       <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required="" autofocus="">
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
         <label for="inputEmail">Email</label>
       </div>
 
       <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <label for="inputPassword">Password</label>
       </div>
 
@@ -35,7 +35,7 @@
           <input type="checkbox" checked="checked" value="remember-me" class="txt2"> Remember me 
         </div>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">LOGIN</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" name="Submit">LOGIN</button>
       <div align="right">
           NOT MEMBER? 
           <!-- <div class="Register-Link"> -->
