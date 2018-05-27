@@ -1,13 +1,28 @@
 .mainPage{
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20%;
+    margin-bottom: 20%;
     background-color: white;
+    /* margin: 50%; */
 }
 
+body{
+    /* margin:20%; */
+    background-color: aqua;
+}
 
 html
 {
      background-color: black;
+    }
+
+    .your-centered-div {
+        width: 560px; /* you have to have a size or this method doesn't work */
+        height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+    
+        position: absolute; /* positions out of the flow, but according to the nearest parent */
+        top: 0; right: 0; /* confuse it i guess */
+        bottom: 0; left: 0;
+        margin: auto; /* make em equal */
     }
