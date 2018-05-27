@@ -17,7 +17,7 @@
 <body>
     <p class="top-Register">Register</p>
         <div class="regis-Form">
-            <form action="/action_page.php">
+            <form method="post" action="/perform_register.php">
                 <div class="form-label-group">
                     <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required autofocus>
                     <label for="inputEmail">Email</label>
