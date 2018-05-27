@@ -23,7 +23,7 @@
     // echo $strSQL;
 
     $objQuery = mysqli_query($connection, $strSQL);
-    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+    // $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
     
     // if(!$objResult)
     // {
@@ -76,7 +76,7 @@
     <?php
         // echo "code running";
         echo "<table>";
-        while ($row = mysqli_fetch_array($objResult, MYSQLI_ASSOC)) {
+        while ($row = mysqli_fetch_array($objQuery, MYSQLI_ASSOC)) {
           $title = $row['title'];
           $description = $row['description'];
           // $content = $row['content'];
