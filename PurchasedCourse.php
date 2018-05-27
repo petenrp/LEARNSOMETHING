@@ -104,32 +104,34 @@
                 <!--<b>description:</b>-->
                 <?php echo $description ?>
             </div>
+            
             <br>
-            
-            
             <br>
 
             <p class="font"><b>Workshop-Schedule</b></p>
             (workshop-link)
 
-            <h3 class="font">Lesson</h3>
-            <div class="h3_font_size indent30 font"><b>Lesson 1: </b>bla bla bla bla
-            <button class="button" style="float: right">PLAY</button>
-            </div><br>
-            <hr>
-            <br>
+            <h3 class="font">Lessons</h3>
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 1: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
 
-            <div class="h3_font_size indent30 font"><b>Lesson 2: </b>bla bla bla bla
-            <button class="button" style="float: right">PLAY</button>
-            </div><br>
-            <hr>
-            <br>
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 2: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
 
-            <div class="h3_font_size indent30 font"><b>Lesson 3: </b>bla bla bla bla
-            <button class="button" style="float: right">PLAY</button>
-            </div><br>
-            <hr>
-            <br>
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 3: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
 
         </div>
     </div>    

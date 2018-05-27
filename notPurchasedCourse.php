@@ -113,9 +113,10 @@
             <br>
 
             <button class="button" style="float: right">Buy</button>
-            </div>
+
             <!-- <button class="button" style="float: right">Buy</button> -->
-            <br><br>
+            <br>
+            <br>
             <hr>
 
             <h3 class="font">Review</h3>
@@ -125,10 +126,30 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
 
+            <br>
+
+            <h3 class="font">Lessons</h3>
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 1: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
+
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 2: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
+
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 3: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
             
         </div>
-
-        <br>
-    </div>
     </body>
 </html>
