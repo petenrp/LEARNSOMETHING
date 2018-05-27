@@ -14,7 +14,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="css/login_style.css">
 
     <!-- FONT -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit|Karla">
@@ -47,7 +47,7 @@
       <div align="right">
           NOT MEMBER? 
           <!-- <div class="Register-Link"> -->
-            <a href="register.html">REGISTER</a>
+            <a href="register.php">REGISTER</a>
           <!-- </div> -->
       </div>
 
