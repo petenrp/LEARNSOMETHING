@@ -1,7 +1,9 @@
 <?php
-  if ($_SESSION["UserID"] != null) {
+  session_start();
+  if ($_SESSION["email"] != null) {
     header("location:main.php");
   }
+  // session_write_close();
 ?>
 
 <html lang="en">
