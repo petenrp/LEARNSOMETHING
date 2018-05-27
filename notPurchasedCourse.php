@@ -91,11 +91,10 @@
                 </div>    
     </nav>
 
-    <div class="mainPage">
-    <br>   
-    <iframe id="ytplayer" type="text/html" width="100%" height="50%"
-  src="https://www.youtube.com/watch?v=j3jsqKi9rtM"
-  frameborder="0"></iframe>
+    <div class="mainPage" style="padding-top: 96px">
+        <iframe id="ytplayer" type="text/html" width="100%" height="50%"
+            src="https://www.youtube.com/watch?v=j3jsqKi9rtM"
+            frameborder="0"></iframe>
         <div style="margin: 30px 30px">
             <h1 class="font">
                 <?php echo $title ?>
@@ -126,6 +125,8 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
 
+            <br>
+            <hr>
             <br>
 
             <h3 class="font">Lessons</h3>

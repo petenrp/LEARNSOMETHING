@@ -87,11 +87,10 @@
         </div>    
     </nav>    
 
-    <div class="mainPage">
-    <br>
-    <iframe id="ytplayer" type="text/html" width="100%" height="50%"
-  src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
-  frameborder="0"></iframe>
+    <div class="mainPage" style="padding-top: 96px">
+        <iframe id="ytplayer" type="text/html" width="100%" height="50%"
+            src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+            frameborder="0"></iframe>
         <div style="margin: 30px 30px">
             <h1 class="font">
                 <?php echo $title ?>
