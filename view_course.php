@@ -5,6 +5,13 @@
     session_start();
     
     // 
+    // REDIRECT IF NOT LOGGED IN
+    // 
+    if ($_SESSION["email"] == null) {
+        header("location:login.php");
+    }
+
+    // 
     // CONNECTION
     // 
     $connection = mysqli_connect("localhost","root","1212312121");
