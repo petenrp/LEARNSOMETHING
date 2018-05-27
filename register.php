@@ -58,7 +58,7 @@
           var password = document.getElementById("inputPassword");
           var confirm_password = document.getElementById("inputConfirmPassword");
 
-          function validatePassword() {
+          function validateForm() {
             if(password.value != confirm_password.value) {
               confirm_password.setCustomValidity("Passwords Don't Match");
               return false;
