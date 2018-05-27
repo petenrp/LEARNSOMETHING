@@ -96,16 +96,16 @@
             <h1 class="font">
                 <?php echo $title ?>
             </h1>
-            <div class="indent50 font">
+            <div class="indent50 font" style="font-size: 18px">
                 <!--<b>description:</b>-->
                 <?php echo $description ?>
             </div>
             <br>
-            <h3 class="font">
+            <h4 class="font">
                 <b>
                     by: &#9;<?php echo $instructor_name ?>
                 </b>
-            </h3>
+            </h4>
             
             <br>
 
