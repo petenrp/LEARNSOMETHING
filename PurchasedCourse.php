@@ -29,27 +29,27 @@
   frameborder="0"></iframe>
         <div style="margin: 30px 30px">
             <h3 class="font">Course Title</h3>
-            <div class="indent50, font"> <b>description:</b> bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
+            <div class="indent50 font"> <b>description:</b> bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
             <br>
-            <div class="indent50, font"><b>by:_______</b></div><br>
+            <div class="indent50 font"><b>by:_______</b></div><br>
 
             <p class="font"><b>Workshop-Schedule</b></p>
             (workshop-link)
 
             <h3 class="font">Lession</h3>
-            <div class="h3_font_size, indent30. font"><b>Lession 1: </b>bla bla bla bla
+            <div class="h3_font_size indent30 font"><b>Lession 1: </b>bla bla bla bla
             <button class="button" style="float: right">PLAY</button>
             </div><br>
             <hr>
             <br>
 
-            <div class="h3_font_size, indent30, font"><b>Lession 2: </b>bla bla bla bla
+            <div class="h3_font_size indent30 font"><b>Lession 2: </b>bla bla bla bla
             <button class="button" style="float: right">PLAY</button>
             </div><br>
             <hr>
             <br>
 
-            <div class="h3_font_size, indent30, font"><b>Lession 3: </b>bla bla bla bla
+            <div class="h3_font_size indent30 font"><b>Lession 3: </b>bla bla bla bla
             <button class="button" style="float: right">PLAY</button>
             </div><br>
             <hr>
