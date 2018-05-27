@@ -73,57 +73,52 @@
 
     <p style="font-family: 'Tajawal', sans-serif; font-weight: bold; font-size: 40px; margin: 40px 75px; padding-top: 56px">My Course</p>
 
-    <?php
-        // echo "code running";
-        echo "<table>";
-        while ($row = mysqli_fetch_array($objQuery, MYSQLI_ASSOC)) {
-          $course_id = $row['course_id'];
-
-          //
-          // FETCH COURSE DATA
-          //
-          $strSQL = "SELECT * FROM courses WHERE id = '$course_id'";
-          $courseQuery = mysqli_query($connection, $strSQL);
-          $courseResult = mysqli_fetch_array($courseQuery, MYSQLI_BOTH);
-
-          if(!$courseResult) {
-              // ERROR
-              echo "error fetching courses\n";
-          }
-          else {
-              $title = $courseResult["title"];
-              $description = $courseResult["description"];
-              $instructor_id = $courseResult["instructor_id"];
+    <div class="owl-carousel owl-theme">
+        <?php
+            // echo "code running";
+            while ($row = mysqli_fetch_array($objQuery, MYSQLI_ASSOC)) {
+              echo "<div class='item'>";
+              $course_id = $row['course_id'];
 
               //
-              // FETCH INSTRUCTOR
+              // FETCH COURSE DATA
               //
-              $strSQL = "SELECT * FROM instructors WHERE id = '$instructor_id'";
-              $instructorQuery = mysqli_query($connection, $strSQL);
-              $instructorResult = mysqli_fetch_array($instructorQuery, MYSQLI_BOTH);
+              $strSQL = "SELECT * FROM courses WHERE id = '$course_id'";
+              $courseQuery = mysqli_query($connection, $strSQL);
+              $courseResult = mysqli_fetch_array($courseQuery, MYSQLI_BOTH);
 
-              if(!$instructorResult) {
-                // ERROR
-                echo "error fetching instructor\n";
+              if(!$courseResult) {
+                  // ERROR
+                  echo "error fetching courses\n";
               }
               else {
-                  $instructor_name = $instructorResult["name"];
+                  $title = $courseResult["title"];
+                  $description = $courseResult["description"];
+                  $instructor_id = $courseResult["instructor_id"];
+
+                  //
+                  // FETCH INSTRUCTOR
+                  //
+                  $strSQL = "SELECT * FROM instructors WHERE id = '$instructor_id'";
+                  $instructorQuery = mysqli_query($connection, $strSQL);
+                  $instructorResult = mysqli_fetch_array($instructorQuery, MYSQLI_BOTH);
+
+                  if(!$instructorResult) {
+                    // ERROR
+                    echo "error fetching instructor\n";
+                  }
+                  else {
+                      $instructor_name = $instructorResult["name"];
+                  }
               }
-          }
 
-          // $content = $row['content'];
-          // echo "<tr><td>$name</td><td>$address</td></tr>";
-          // echo "<h1>$name</h1>";
-          echo "<h3>$title</h3>";
-          // echo "<p>$description</p>";
-          echo "<p>BY ".strtoupper($instructor_name)."</p>";
-          echo "<br/>";
-        }
-        echo "</table>";
-    ?>
-
-    <div class="owl-carousel owl-theme">
-        <div class="item">
+              echo "<h4>$title</h4>";
+              echo "<p>BY ".strtoupper($instructor_name)."</p>";
+              echo "<p>$description</p>";
+              echo "</div>";
+            }
+        ?>
+        <!-- <div class="item">
             <img class="course-item" src="img/1.jpg"/>
             <h4>course 1</h4>
         </div>
@@ -170,7 +165,7 @@
         <div class="item">
             <img class="course-item" src="img/12.jpg"/>
             <h4>course 12</h4>
-        </div>         
+        </div>          -->
     </div>
 
     <div style="height: 2px; width: auto; margin-left: 5%; margin-top: 25px; margin-right: 5%; background: #191917"></div>
