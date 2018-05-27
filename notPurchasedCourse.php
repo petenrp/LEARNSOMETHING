@@ -2,6 +2,16 @@
 <head>
     <link rel="stylesheet" href="PurchasedCourse_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/items.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    
     <style>
         .checked {
             color: orange;
@@ -16,7 +26,7 @@
                     </a>
                 </div>    
     </nav>
-    
+
     <div class="mainPage">
     <iframe id="ytplayer" type="text/html" width="100%" height="auto"
   src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"

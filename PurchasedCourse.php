@@ -1,15 +1,26 @@
-<html >
+<html>
+
 <head>
-    <link rel="stylesheet" href="PurchasedCourse_style.css">
+    <link rel="stylesheet" href="css/PurchasedCourse_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/items.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
 </head>
 <body style="background-color: #F4F1ED">
+    
     <nav class="navbar navbar-fixed-top" style="width: 100%; height:70px; background: #191917">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/weblogo.png" alt="logo" style="Height:30px;">
-                    </a>
-                </div>    
-    </nav>
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/weblogo.png" alt="logo" style="Height:30px;">
+            </a>
+        </div>    
+    </nav>    
 
     <div class="mainPage">
     <iframe id="ytplayer" type="text/html" width="100%" height="auto"
