@@ -46,7 +46,6 @@
             $_SESSION["last_name"] = $objResult["last_name"];
             $_SESSION["email"] = $objResult["email"];
             $_SESSION["password"] = $objResult["password"];
-            
 
 			session_write_close();
 			
