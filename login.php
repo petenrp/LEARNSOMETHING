@@ -16,18 +16,18 @@
   </head>
   <body>
 
-    <form class="form-signin">
+    <form class="form-signin" name="form1" method="post" action="perform_login.php">
       <div class="mb-4">
         <h1 class="h3 mb-3 font-weight-normal">Login</h1>
       </div>
 
       <div class="form-label-group">
-        <input type="Username" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
-        <label for="inputUsername">Username</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+        <label for="inputEmail">Email</label>
       </div>
 
       <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <label for="inputPassword">Password</label>
       </div>
 
@@ -36,7 +36,7 @@
           <input type="checkbox" checked="checked" value="remember-me" class="txt2"> Remember me 
         </div>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit" href="account.html">LOGIN</button>
+      <input class="btn btn-lg btn-primary btn-block" type="submit" name="Submit" value="LOGIN" />
       <div align="right">
           NOT MEMBER? 
           <!-- <div class="Register-Link"> -->
