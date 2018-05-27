@@ -34,7 +34,8 @@
     
 	if(!$objResult)
 	{
-			echo "Not purchased";
+            echo "Not purchased";
+            header("location:notPurchasedCourse.php?id=$course_id");
 	}
 	else
 	{
@@ -46,7 +47,7 @@
 
 			// session_write_close();
 			
-			// header("location:purchased.php");
+			header("location:PurchasedCourse.php?id=$course_id");
 	}
 	mysqli_close($connection);
 ?>
