@@ -1,6 +1,6 @@
 <html >
 <head>
-    <link rel="stylesheet" href="CousePage_style.css">
+    <link rel="stylesheet" href="PurchasedCourse_style.css">
 </head>
 <body>
     <div class="mainPage">
