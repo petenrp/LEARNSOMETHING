@@ -1,4 +1,9 @@
-<!doctype html>
+<?php
+  if ($_SESSION["UserID"] != null) {
+    header("location:main.php");
+  }
+?>
+
 <html lang="en">
   <head>
     <title>Please login</title>
