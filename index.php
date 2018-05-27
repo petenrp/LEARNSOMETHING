@@ -77,12 +77,13 @@
         // echo "code running";
         echo "<table>";
         while ($row = mysqli_fetch_array($objResult, MYSQLI_ASSOC)) {
-          $name   = $row['title'];
-          $address = $row['description'];
+          $title = $row['title'];
+          $description = $row['description'];
           // $content = $row['content'];
           // echo "<tr><td>$name</td><td>$address</td></tr>";
           // echo "<h1>$name</h1>";
-          echo "<p>$address</p>";
+          echo "<h3>$title</h3>";
+          echo "<p>$description</p>";
           echo "<br/>";
         }
         echo "</table>";
