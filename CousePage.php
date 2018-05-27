@@ -22,6 +22,19 @@
             </div><br>
             <hr>
             <br>
+
+            <div class="h3_font_size, indent30"><b>Lession 2: </b>bla bla bla bla
+            <button class="button"PLAY</button>
+            </div><br>
+            <hr>
+            <br>
+
+            <div class="h3_font_size, indent30"><b>Lession 3: </b>bla bla bla bla
+            <button class="button"PLAY</button>
+            </div><br>
+            <hr>
+            <br>
+
         </div>
     </body>
 </div>
