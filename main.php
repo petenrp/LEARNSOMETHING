@@ -1,6 +1,6 @@
 <?php
   if ($_SESSION["UserID"] == null) {
-    header("location:main.php");
+    header("location:login.php");
   }
   else {
       echo $_SESSION["UserID"];
