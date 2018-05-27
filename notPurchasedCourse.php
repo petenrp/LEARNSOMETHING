@@ -27,6 +27,40 @@
 	if($objResult) {
         header("location:PurchasedCourse.php?id=$course_id");
     }
+
+    //
+    // QUERY course data
+    //
+    $strSQL = "SELECT * FROM courses WHERE id = '$course_id'";
+
+    $objQuery = mysqli_query($connection, $strSQL);
+    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+
+    if(!$objResult) {
+        // ERROR: just redirect to the index page
+        header("location:index.php");
+    }
+    else {
+        $title = $objResult["title"];
+        $description = $objResult["description"];
+        $instructor_id = $objResult["instructor_id"];
+    }
+
+    //
+    // QUERY instructor data
+    //
+    $strSQL = "SELECT * FROM instructors WHERE id = '$instructor_id'";
+
+    $objQuery = mysqli_query($connection, $strSQL);
+    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+
+    if(!$objResult) {
+        // ERROR: just redirect to the index page
+        header("location:index.php");
+    }
+    else {
+        $instructor_name = $objResult["name"];
+    }
 ?>
 <html >
 <head>
@@ -60,17 +94,29 @@
     <div class="mainPage">
     <br>   
     <iframe id="ytplayer" type="text/html" width="100%" height="50%"
-  src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+  src="https://www.youtube.com/watch?v=j3jsqKi9rtM"
   frameborder="0"></iframe>
         <div style="margin: 30px 30px">
-            <h3 class="font">Course Title</h3>
-            <div class="indent50 font"><b>description:</b> bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
+            <h1 class="font">
+                <?php echo $title ?>
+            </h1>
+            <h4 class="font">
+                BY &#9;<b><?php echo strtoupper($instructor_name) ?></b>
+            </h4>
             <br>
-            <div class="indent50 font"><b>by:_______</b>
-            <button class="button" style="float: right">Buy</button>
+            <div class="indent50 font" style="font-size: 18px">
+                <!--<b>description:</b>-->
+                <?php echo $description ?>
             </div>
+            
+            <br>
+            <br>
+
+            <button class="button" style="float: right">Buy</button>
+
             <!-- <button class="button" style="float: right">Buy</button> -->
-            <br><br>
+            <br>
+            <br>
             <hr>
 
             <h3 class="font">Review</h3>
@@ -80,10 +126,30 @@
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
 
-            
-        </div>
+            <br>
 
-        <br>
-    </div>
+            <h3 class="font">Lessons</h3>
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 1: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
+
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 2: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
+
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 3: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
+
+        </div>
     </body>
 </html>

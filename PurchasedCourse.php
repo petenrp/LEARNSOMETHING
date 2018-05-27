@@ -29,10 +29,8 @@
     }
 
     //
-    // QUERY coure data
+    // QUERY course data
     //
-    $course_id = $_GET['id'];
-
     $strSQL = "SELECT * FROM courses WHERE id = '$course_id'";
 
     $objQuery = mysqli_query($connection, $strSQL);
@@ -44,6 +42,24 @@
     }
     else {
         $title = $objResult["title"];
+        $description = $objResult["description"];
+        $instructor_id = $objResult["instructor_id"];
+    }
+
+    //
+    // QUERY instructor data
+    //
+    $strSQL = "SELECT * FROM instructors WHERE id = '$instructor_id'";
+
+    $objQuery = mysqli_query($connection, $strSQL);
+    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+
+    if(!$objResult) {
+        // ERROR: just redirect to the index page
+        header("location:index.php");
+    }
+    else {
+        $instructor_name = $objResult["name"];
     }
 ?>
 
@@ -77,32 +93,45 @@
   src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
   frameborder="0"></iframe>
         <div style="margin: 30px 30px">
-            <h3 class="font"><?php echo $title ?></h3>
-            <div class="indent50 font"> <b>description:</b> bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
+            <h1 class="font">
+                <?php echo $title ?>
+            </h1>
+            <h4 class="font">
+                BY &#9;<b><?php echo strtoupper($instructor_name) ?></b>
+            </h4>
             <br>
-            <div class="indent50 font"><b>by:_______</b></div><br>
+            <div class="indent50 font" style="font-size: 18px">
+                <!--<b>description:</b>-->
+                <?php echo $description ?>
+            </div>
+            
+            <br>
+            <br>
 
             <p class="font"><b>Workshop-Schedule</b></p>
             (workshop-link)
 
-            <h3 class="font">Lession</h3>
-            <div class="h3_font_size indent30 font"><b>Lession 1: </b>bla bla bla bla
-            <button class="button" style="float: right">PLAY</button>
-            </div><br>
-            <hr>
-            <br>
+            <h3 class="font">Lessons</h3>
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 1: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
 
-            <div class="h3_font_size indent30 font"><b>Lession 2: </b>bla bla bla bla
-            <button class="button" style="float: right">PLAY</button>
-            </div><br>
-            <hr>
-            <br>
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 2: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
 
-            <div class="h3_font_size indent30 font"><b>Lession 3: </b>bla bla bla bla
-            <button class="button" style="float: right">PLAY</button>
-            </div><br>
-            <hr>
-            <br>
+            <div class="h3_font_size indent30 font">
+                <b>Lesson 3: </b>
+                bla bla bla bla
+                <button class="button" style="float: right">PLAY</button>
+            </div>
+            <br><hr><br>
 
         </div>
     </div>    
