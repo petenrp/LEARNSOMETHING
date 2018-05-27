@@ -9,28 +9,32 @@
   frameborder="0"></iframe>
         <div style="margin: 30px 30px">
             <h3>Course Title</h3>
-            <div class="indent">describe: bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
+            <div class="indent50">describe: bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
             <br>
-            <div class="indent"><b>by:_______</b></div>
+            <div class="indent50"><b>by:_______</b></div>
 
             <p><b>Workshop-Schedule</b></p>
             (workshop-link)
 
             <h3>Lession</h3>
-            <h5>1.)</h5>
-            <h5>2.)</h5>
-            <h5>3.)</h5>
-            <h5>4.)</h5>
-            <h5>5.)</h5>
-            <h5>5.)</h5>
-            <h5>5.)</h5>
-            <h5>5.)</h5>
-            <h5>5.)</h5>
-            <h5>5.)</h5>
-            <h5>5.)</h5>
-            <h5>5.)</h5>
-
+            <div class="h3_font_size, indent30"><b>Lession 1: </b>bla bla bla bla
+            <button class="button" style="float: right">PLAY</button>
+            </div><br>
+            <hr>
             <br>
+
+            <div class="h3_font_size, indent30"><b>Lession 2: </b>bla bla bla bla
+            <button class="button" style="float: right">PLAY</button>
+            </div><br>
+            <hr>
+            <br>
+
+            <div class="h3_font_size, indent30"><b>Lession 3: </b>bla bla bla bla
+            <button class="button" style="float: right">PLAY</button>
+            </div><br>
+            <hr>
+            <br>
+
         </div>
     </body>
 </div>
