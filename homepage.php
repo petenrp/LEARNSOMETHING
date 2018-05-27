@@ -1,7 +1,7 @@
 <?php
   ini_set('display_errors', 1);
   session_start();
-  
+
   if ($_SESSION["email"] == null) {
     header("location:login.php");
   }
@@ -13,7 +13,7 @@
     mysqli_select_db($connection, "LearnSomething");
 
   $q = "SELECT name, id FROM instructors"; 
-  $r = mysqli_query($dbc, $q); 
+  $r = mysqli_query($connection, $q); 
 
   // while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
   //   $name   = $row['name'];
@@ -29,16 +29,6 @@
   //   $mycontent[] = $output;     
   // }
   // session_write_close();
-
-  echo "code running";
-  echo "<table>";
-  while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
-    $name   = $row['name'];
-    $address = $row['id'];
-    // $content = $row['content'];
-    echo "<tr><td>".$name."</td><td>".$address."</td><td>".$content."</td></tr>";
-  }
-  echo "</table>";
 ?>
 
 <html lang="en">
@@ -65,14 +55,17 @@
 
     <?php
         // echo "code running";
-        // echo "<table>";
-        // while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
-        //   $name   = $row['name'];
-        //   $address = $row['id'];
-        //   // $content = $row['content'];
-        //   echo "<tr><td>".$name."</td><td>".$address."</td><td>".$content."</td></tr>";
-        // }
-        // echo "</table>";
+        echo "<table>";
+        while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
+          $name   = $row['name'];
+          $address = $row['id'];
+          // $content = $row['content'];
+          // echo "<tr><td>$name</td><td>$address</td></tr>";
+          // echo "<h1>$name</h1>";
+          echo "<p>$address</p>";
+          echo "<br/>";
+        }
+        echo "</table>";
     ?>
     Welcome, you're already logged in :)
 
