@@ -1,9 +1,16 @@
 <?php
     // DEBUG
-    // ini_set('display_errors', 1);
+    ini_set('display_errors', 1);
 
     session_start();
     
+    // 
+    // REDIRECT IF NOT LOGGED IN
+    // 
+    if ($_SESSION["email"] == null) {
+        header("location:login.php");
+    }
+
     // 
     // CONNECTION
     // 
@@ -15,29 +22,32 @@
     $course_id = $_GET['id'];
     $user_id = $_SESSION['email'];
 
-    echo "course_id = $course_id";
-    echo "user_id = $user_id";
-    // $strSQL = "SELECT * FROM purchased WHERE email = '".mysqli_real_escape_string($connection, $_POST['inputEmail'])."' 
-	// and password = '".mysqli_real_escape_string($connection, md5($_POST['inputPassword']))."'";
+    // echo "course_id = $course_id\n";
+    // echo "user_id = $user_id";
+
+    $strSQL = "SELECT * FROM purchase WHERE course_id = '$course_id' and user_id = '$user_id'";
     
     // echo $strSQL;
 
-    // $objQuery = mysqli_query($connection, $strSQL);
-	// $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
-	// if(!$objResult)
-	// {
-	// 		echo "Username and Password Incorrect!";
-	// }
-	// else
-	// {
-	// 		$_SESSION["first_name"] = $objResult["first_name"];
-    //         $_SESSION["last_name"] = $objResult["last_name"];
-    //         $_SESSION["email"] = $objResult["email"];
-    //         $_SESSION["password"] = $objResult["password"];
+    $objQuery = mysqli_query($connection, $strSQL);
+    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+    
+	if(!$objResult)
+	{
+            echo "Not purchased";
+            header("location:notPurchasedCourse.php?id=$course_id");
+	}
+	else
+	{
+            echo "purchased, enjoy :)";
+			// $_SESSION["first_name"] = $objResult["first_name"];
+            // $_SESSION["last_name"] = $objResult["last_name"];
+            // $_SESSION["email"] = $objResult["email"];
+            // $_SESSION["password"] = $objResult["password"];
 
-	// 		session_write_close();
+			// session_write_close();
 			
-	// 		header("location:index.php");
-	// }
-	// mysqli_close($connection);
+			header("location:PurchasedCourse.php?id=$course_id");
+	}
+	mysqli_close($connection);
 ?>

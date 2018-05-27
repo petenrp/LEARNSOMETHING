@@ -1,3 +1,33 @@
+<?php
+    // DEBUG
+    ini_set('display_errors', 1);
+
+    session_start();
+    
+    // 
+    // REDIRECT IF NOT LOGGED IN
+    // 
+    if ($_SESSION["email"] == null) {
+        header("location:login.php");
+    }
+    // 
+    // REDIRECT IF PURCHASED
+    // 
+    $connection = mysqli_connect("localhost","root","1212312121");
+    mysqli_select_db($connection, "LearnSomething");
+    
+    $course_id = $_GET['id'];
+    $user_id = $_SESSION['email'];
+
+    $strSQL = "SELECT * FROM purchase WHERE course_id = '$course_id' and user_id = '$user_id'";
+
+    $objQuery = mysqli_query($connection, $strSQL);
+    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+    
+	if($objResult) {
+        header("location:PurchasedCourse.php?id=$course_id");
+    }
+?>
 <html >
 <head>
     <link rel="stylesheet" href="css/Course_style.css">
