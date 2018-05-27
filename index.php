@@ -1,34 +1,48 @@
 <?php
-  ini_set('display_errors', 1);
-  session_start();
+    ini_set('display_errors', 1);
+    session_start();
 
-  if ($_SESSION["email"] == null) {
-    header("location:login.php");
-  }
-  // else {
-  //     echo $_SESSION["email"];
-  // }
+    if ($_SESSION["email"] == null) {
+      header("location:login.php");
+    }
+    // else {
+    //     echo $_SESSION["email"];
+    // }
 
-  $connection = mysqli_connect("localhost","root","1212312121");
+    // 
+    // CONNECTION
+    // 
+    $connection = mysqli_connect("localhost","root","1212312121");
     mysqli_select_db($connection, "LearnSomething");
+    
+    // $course_id = $_GET['id'];
+    $user_id = $_SESSION['email'];
 
-  $q = "SELECT name, id FROM instructors"; 
-  $r = mysqli_query($connection, $q); 
+    $strSQL = "SELECT * FROM purchase WHERE user_id = '$user_id'";
+    
+    // echo $strSQL;
 
-  // while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
-  //   $name   = $row['name'];
-  //   $address = $row['address'];
-  //   $content = $row['content'];
+    $objQuery = mysqli_query($connection, $strSQL);
+    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+    
+    if(!$objResult)
+    {
+        echo "Not purchased";
+        header("location:notPurchasedCourse.php?id=$course_id");
+    }
+    else
+    {
+        echo "purchased, enjoy :)";
+        // $_SESSION["first_name"] = $objResult["first_name"];
+        // $_SESSION["last_name"] = $objResult["last_name"];
+        // $_SESSION["email"] = $objResult["email"];
+        // $_SESSION["password"] = $objResult["password"];
 
-  //   //Create new output
-  //   $output  = "<p>$name</p>";
-  //   $output .= "<p>$address</p>";
-  //   $output .= "<p>$content</p>";
-
-  //   //Add output to array
-  //   $mycontent[] = $output;     
-  // }
-  // session_write_close();
+        // session_write_close();
+        
+        header("location:PurchasedCourse.php?id=$course_id");
+    }
+    mysqli_close($connection);
 ?>
 
 <!DOCTYPE html>
@@ -59,6 +73,21 @@
 
     <p style="font-family: 'Tajawal', sans-serif; font-weight: bold; font-size: 40px; margin: 40px 75px; padding-top: 56px">My Course</p>
 
+    <?php
+        // echo "code running";
+        echo "<table>";
+        while ($row = mysqli_fetch_array($objResult, MYSQLI_ASSOC)) {
+          $name   = $row['title'];
+          $address = $row['description'];
+          // $content = $row['content'];
+          // echo "<tr><td>$name</td><td>$address</td></tr>";
+          // echo "<h1>$name</h1>";
+          echo "<p>$address</p>";
+          echo "<br/>";
+        }
+        echo "</table>";
+    ?>
+    
     <div class="owl-carousel owl-theme">
         <div class="item">
             <img class="course-item" src="img/1.jpg"/>
@@ -167,21 +196,6 @@
         <img class="course-item-2" src="img/11.jpg"/>
         <img class="course-item-2" src="img/12.jpg"/>
     </center>
-
-    <?php
-        // echo "code running";
-        echo "<table>";
-        while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
-          $name   = $row['name'];
-          $address = $row['id'];
-          // $content = $row['content'];
-          // echo "<tr><td>$name</td><td>$address</td></tr>";
-          // echo "<h1>$name</h1>";
-          echo "<p>$address</p>";
-          echo "<br/>";
-        }
-        echo "</table>";
-    ?>
 
     <footer style="background-color: #191917; padding-top: 17px; padding-bottom: 12px">
         <div style="font-family: 'Tajawal', sans-serif; font-size: 25px; text-align: center">SLEPPYTEAM CO.,Ltd.</div>
