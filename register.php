@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="register_style.css">
 </head>
 <body>
-    <p class="sizepx">Register</p>
-    <h1>Register</h1>
+    <!-- background-color: black; -->
+    <p class="topRegister">Register</p>
+    <p align="right"> isus</p>
 </body>
 </html>
