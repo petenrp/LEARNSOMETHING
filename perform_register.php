@@ -1,18 +1,27 @@
 <?php
 	session_start();
 	
+	if ($_SERVER["REQUEST_METHOD"] != "POST") {
+		header("location:register.php");
+	}
+
 	$first_name = $_POST['inputFirstname'];
     $last_name = $_POST['inputLastname'];
     $email = $_POST['inputEmail'];
     // $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
     $password = md5($_POST['inputPassword']);
 
-	if ($first_name == null || $last_name == null || $email == null || $password == null) {
-		header("location:register.php");
-	}
-	else {
-		echo "NOPE NONE OF THAT IS NULL";
-	}
+	echo $first_name;
+	echo $last_name;
+	echo $email;
+	echo $password;
+
+	// if ($first_name == null || $last_name == null || $email == null || $password == null) {
+	// 	// header("location:register.php");
+	// }
+	// else {
+	// 	echo "NOPE NONE OF THAT IS NULL";
+	// }
 
 	$connection = mysqli_connect("localhost","root","1212312121");
     mysqli_select_db($connection, "LearnSomething");
