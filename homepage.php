@@ -52,6 +52,7 @@
     </nav>
 
     <?php
+        echo "code running";
         echo "<table>";
         while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
           $name   = $row['name'];
