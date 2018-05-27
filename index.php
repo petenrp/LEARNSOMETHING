@@ -112,9 +112,10 @@
                   }
               }
 
-              echo "<h4>$title</h4>";
-              echo "<p>BY ".strtoupper($instructor_name)."</p>";
-              echo "<p>$description</p>";
+              echo "<h3>$title</h3>";
+              echo "<img class='course-item' src='img/1.jpg'/>";
+              echo "<h4>BY ".strtoupper($instructor_name)."</h4>";
+              // echo "<p>$description</p>";
               echo "</div>";
             }
         ?>
