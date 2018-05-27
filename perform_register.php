@@ -10,6 +10,9 @@
 	if ($first_name == null || $last_name == null || $email == null || $password == null) {
 		header("location:register.php");
 	}
+	else {
+		echo "NOPE NONE OF THAT IS NULL";
+	}
 
 	$connection = mysqli_connect("localhost","root","1212312121");
     mysqli_select_db($connection, "LearnSomething");
