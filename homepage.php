@@ -61,7 +61,7 @@
           $address = $row['id'];
           // $content = $row['content'];
           // echo "<tr><td>$name</td><td>$address</td></tr>";
-          echo "<h1>$name</h1>";
+          // echo "<h1>$name</h1>";
           echo "<p>$address</p>";
           echo "<br/>";
         }
