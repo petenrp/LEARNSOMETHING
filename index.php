@@ -112,9 +112,9 @@
                   }
               }
 
-              echo "<img class='course-item' src='img/1.jpg'/>";
+              echo "<img style='height: 200px' src='img/1.jpg'/>";
               echo "<h3 class='font' style='font-weight: bold'>$title</h3>";
-              echo "<h4 style='font-weight: bold'>BY ".strtoupper($instructor_name)."</h4>";
+              echo "<h5>BY ".strtoupper($instructor_name)."</h5>";
               // echo "<p>$description</p>";
               echo "</div>";
             }
