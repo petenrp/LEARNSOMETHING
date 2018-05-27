@@ -25,10 +25,10 @@
 	else
 	{
 			echo "REGISTER COMPLETE";
-			$_SESSION["first_name"] = $objResult["first_name"];
-            $_SESSION["last_name"] = $objResult["last_name"];
-            $_SESSION["email"] = $objResult["email"];
-            $_SESSION["password"] = $objResult["password"];
+			$_SESSION["first_name"] = $first_name;
+            $_SESSION["last_name"] = $last_name;
+            $_SESSION["email"] = $email;
+            $_SESSION["password"] = $password;
 
 			session_write_close();
 			
