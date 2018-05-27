@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="register_style.css">
 </head>
 <body>
-    <p class"size50px">Register</p>
+    <p class"sizepx">Register</p>
+    <h1>Register</h1>
 </body>
 </html>
