@@ -87,7 +87,7 @@
         </div>    
     </nav>    
 
-    <div class="mainPage" style="padding-top: 96px">
+    <div class="mainPage" style="padding-top: 20px">
         <iframe id="ytplayer" type="text/html" width="100%" height="50%"
             src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
             frameborder="0"></iframe>

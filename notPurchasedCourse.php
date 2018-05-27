@@ -84,16 +84,16 @@
 </head>
 <body style="background-color: #F4F1ED">
     <nav class="navbar navbar-fixed-top" style="width: 100%; height:70px; background: #191917">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/weblogo.png" alt="logo" style="Height:30px;">
-                    </a>
-                </div>    
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/weblogo.png" alt="logo" style="Height:30px;">
+            </a>
+        </div>    
     </nav>
 
-    <div class="mainPage" style="padding-top: 96px">
+    <div class="mainPage" style="padding-top: 20px">
         <iframe id="ytplayer" type="text/html" width="100%" height="50%"
-            src="https://www.youtube.com/watch?v=j3jsqKi9rtM"
+            src="https://www.youtube.com/embed/j3jsqKi9rtM?autoplay=1&origin=http://example.com"
             frameborder="0"></iframe>
         <div style="margin: 30px 30px">
             <h1 class="font">
