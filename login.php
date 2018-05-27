@@ -15,7 +15,7 @@
   </head>
   <body>
 
-    <form class="form-signin" action="perform_register.php">
+    <form class="form-signin" action="perform_login.php">
       <div class="mb-4">
         <h1 class="h3 mb-3 font-weight-normal">Login</h1>
       </div>
