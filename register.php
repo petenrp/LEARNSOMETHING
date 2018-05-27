@@ -1,7 +1,7 @@
 <html>
 <html lang="en">
   <head>
-    <title>Please login</title>
+    <title>Register</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/login_style.css">
 
     <!-- FONT -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit|Karla">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
 
     <title>Login</title>
   </head>
-<body>
+  <body style="font-family: Tajawal, sans-serif;">
     <form class="form-signin" name="Register_Form" method="post" action="perform_register.php" onsubmit="return validateForm()">
       <div class="mb-4">
         <h1 class="h3 mb-3 font-weight-normal">Register</h1>
