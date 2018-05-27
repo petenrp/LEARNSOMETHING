@@ -96,16 +96,15 @@
             <h1 class="font">
                 <?php echo $title ?>
             </h1>
+            <h4 class="font">
+                BY &#9;<b><?php echo strtoupper($instructor_name) ?></b>
+            </h4>
             <div class="indent50 font" style="font-size: 18px">
                 <!--<b>description:</b>-->
                 <?php echo $description ?>
             </div>
             <br>
-            <h4 class="font">
-                <b>
-                    by: &#9;<?php echo $instructor_name ?>
-                </b>
-            </h4>
+            
             
             <br>
 
