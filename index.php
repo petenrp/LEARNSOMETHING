@@ -101,8 +101,8 @@
           $instructorResult = mysqli_fetch_array($instructorQuery, MYSQLI_BOTH);
 
           if(!$instructorResult) {
-              // ERROR: just redirect to the index page
-              header("location:index.php");
+            // ERROR
+            echo "error fetching instructor\n";
           }
           else {
               $instructor_name = $instructorResult["name"];
