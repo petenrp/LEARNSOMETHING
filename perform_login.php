@@ -1,8 +1,7 @@
 <?php
-    ini_set('display_errors', 1);
     session_start();
     
-    $connection = mysqli_connect("sleepy.hackathon.ilab.sit.kmutt.ac.th","root","1212312121");
+    $connection = mysqli_connect("mysql://sleepy.hackathon.ilab.sit.kmutt.ac.th","root","1212312121");
     mysqli_select_db($connection, "LearnSomething");
     
     $strSQL = "SELECT * FROM users WHERE email = '".mysqli_real_escape_string($connection, $_POST['inputEmail'])."' 
