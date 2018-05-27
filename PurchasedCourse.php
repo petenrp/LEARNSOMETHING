@@ -81,8 +81,8 @@
     
     <nav class="navbar navbar-fixed-top" style="width: 100%; height:70px; background: #191917">
         <div class="container">
-            <a class="navbar-brand" href="">
-                <img src="img/weblogo.png" alt="logo" style="Height:30px;">
+            <a class="navbar-brand" href="http://sleepy.hackathon.ilab.sit.kmutt.ac.th" style="margin: 12px 0; height: 100%;">
+                <img src="img/weblogo.png" alt="logo" style="Height:20px;">
             </a>
         </div>    
     </nav>    
