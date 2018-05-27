@@ -12,7 +12,7 @@
     $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
     $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
 
-	$strSQL = "INSERT INTO registration (first_name, last_name, email, password)
+	$strSQL = "INSERT INTO users (first_name, last_name, email, password)
 	VALUES ('$first_name', '$last_name', '$email', '$password')";
 	
 	$objQuery = mysqli_query($connection, $strSQL);
