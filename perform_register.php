@@ -6,10 +6,10 @@
 
 	// $strSQL = "SELECT * FROM registration WHERE Username = '".mysqli_real_escape_string($connection, $_POST['txtUsername'])."' 
     // and Password = '".mysqli_real_escape_string($connection, $_POST['txtPassword'])."'";
-    $first_name = mysqli_real_escape_string($connection, $_POST['inputFirstName']);
-    $last_name = mysqli_real_escape_string($connection, $_POST['inputLastName']);
+    $first_name = mysqli_real_escape_string($connection, $_POST['inputFirstname']);
+    $last_name = mysqli_real_escape_string($connection, $_POST['inputLastname']);
     $email = mysqli_real_escape_string($connection, $_POST['inputEmail']);
-    $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
+    // $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
     $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
 
 	$strSQL = "INSERT INTO users (first_name, last_name, email, password)
@@ -25,8 +25,10 @@
 	else
 	{
 			echo "REGISTER COMPLETE";
-			// $_SESSION["UserID"] = $objResult["UserID"];
-			// $_SESSION["Status"] = $objResult["Status"];
+			$_SESSION["first_name"] = $objResult["first_name"];
+            $_SESSION["last_name"] = $objResult["last_name"];
+            $_SESSION["email"] = $objResult["email"];
+            $_SESSION["password"] = $objResult["password"];
 
 			session_write_close();
 			
