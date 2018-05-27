@@ -99,6 +99,7 @@
             <h4 class="font">
                 BY &#9;<b><?php echo strtoupper($instructor_name) ?></b>
             </h4>
+            <br>
             <div class="indent50 font" style="font-size: 18px">
                 <!--<b>description:</b>-->
                 <?php echo $description ?>

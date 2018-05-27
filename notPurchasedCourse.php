@@ -27,6 +27,40 @@
 	if($objResult) {
         header("location:PurchasedCourse.php?id=$course_id");
     }
+
+    //
+    // QUERY course data
+    //
+    $strSQL = "SELECT * FROM courses WHERE id = '$course_id'";
+
+    $objQuery = mysqli_query($connection, $strSQL);
+    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+
+    if(!$objResult) {
+        // ERROR: just redirect to the index page
+        header("location:index.php");
+    }
+    else {
+        $title = $objResult["title"];
+        $description = $objResult["description"];
+        $instructor_id = $objResult["instructor_id"];
+    }
+
+    //
+    // QUERY instructor data
+    //
+    $strSQL = "SELECT * FROM instructors WHERE id = '$instructor_id'";
+
+    $objQuery = mysqli_query($connection, $strSQL);
+    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+
+    if(!$objResult) {
+        // ERROR: just redirect to the index page
+        header("location:index.php");
+    }
+    else {
+        $instructor_name = $objResult["name"];
+    }
 ?>
 <html >
 <head>
@@ -63,10 +97,21 @@
   src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
   frameborder="0"></iframe>
         <div style="margin: 30px 30px">
-            <h3 class="font">Course Title</h3>
-            <div class="indent50 font"><b>description:</b> bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
+            <h1 class="font">
+                <?php echo $title ?>
+            </h1>
+            <h4 class="font">
+                BY &#9;<b><?php echo strtoupper($instructor_name) ?></b>
+            </h4>
             <br>
-            <div class="indent50 font"><b>by:_______</b>
+            <div class="indent50 font" style="font-size: 18px">
+                <!--<b>description:</b>-->
+                <?php echo $description ?>
+            </div>
+            
+            <br>
+            <br>
+
             <button class="button" style="float: right">Buy</button>
             </div>
             <!-- <button class="button" style="float: right">Buy</button> -->
