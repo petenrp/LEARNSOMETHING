@@ -1,6 +1,6 @@
 <html >
 <head>
-    <link rel="stylesheet" href="notPurchasedCourse_style.css">
+    <link rel="stylesheet" href="PurchasedCourse_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .checked {
@@ -9,6 +9,14 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-fixed-top" style="width: 100%; height:70px; background: #191917">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/weblogo.png" alt="logo" style="Height:30px;">
+                    </a>
+                </div>    
+    </nav>
+    
     <div class="mainPage">
     <iframe id="ytplayer" type="text/html" width="100%" height="auto"
   src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
@@ -30,7 +38,11 @@
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
+
+            
         </div>
+
+        <br>
+    </div>
     </body>
-</div>
 </html>

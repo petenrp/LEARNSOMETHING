@@ -2,7 +2,15 @@
 <head>
     <link rel="stylesheet" href="PurchasedCourse_style.css">
 </head>
-<body>
+<body style="background-color: #F4F1ED">
+    <nav class="navbar navbar-fixed-top" style="width: 100%; height:70px; background: #191917">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/weblogo.png" alt="logo" style="Height:30px;">
+                    </a>
+                </div>    
+    </nav>
+
     <div class="mainPage">
     <iframe id="ytplayer" type="text/html" width="100%" height="auto"
   src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
@@ -36,6 +44,7 @@
             <br>
 
         </div>
-    </body>
-</div>
+    </div>    
+</body>
+
 </html>
