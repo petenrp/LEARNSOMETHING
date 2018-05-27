@@ -60,7 +60,10 @@
           $name   = $row['name'];
           $address = $row['id'];
           // $content = $row['content'];
-          echo "<tr><td>$name</td><td>$address</td></tr>";
+          // echo "<tr><td>$name</td><td>$address</td></tr>";
+          echo "<h1>$name</h1>";
+          echo "<br/>$address";
+          echo "<br/>";
         }
         echo "</table>";
     ?>
