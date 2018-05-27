@@ -1,4 +1,5 @@
 <?php
+    ini_set('display_errors', 1);
     session_start();
     
     $connection = mysqli_connect("sleepy.hackathon.ilab.sit.kmutt.ac.th","root","1212312121");
@@ -7,6 +8,8 @@
     $strSQL = "SELECT * FROM users WHERE email = '".mysqli_real_escape_string($connection, $_POST['inputEmail'])."' 
 	and password = '".mysqli_real_escape_string($connection, $_POST['inputPassword'])."'";
     
+    echo strSQL;
+
     $objQuery = mysqli_query($connection, $strSQL);
 	$objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
 	if(!$objResult)
