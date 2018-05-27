@@ -1,7 +1,7 @@
 <?php
   ini_set('display_errors', 1);
   session_start();
-  
+
   if ($_SESSION["email"] == null) {
     header("location:login.php");
   }
@@ -13,7 +13,7 @@
     mysqli_select_db($connection, "LearnSomething");
 
   $q = "SELECT name, id FROM instructors"; 
-  $r = mysqli_query($dbc, $q); 
+  $r = mysqli_query($connection, $q); 
 
   // while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
   //   $name   = $row['name'];
