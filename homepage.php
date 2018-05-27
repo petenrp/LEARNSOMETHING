@@ -29,16 +29,6 @@
   //   $mycontent[] = $output;     
   // }
   // session_write_close();
-
-  echo "code running";
-  echo "<table>";
-  while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
-    $name   = $row['name'];
-    $address = $row['id'];
-    // $content = $row['content'];
-    echo "<tr><td>".$name."</td><td>".$address."</td><td>".$content."</td></tr>";
-  }
-  echo "</table>";
 ?>
 
 <html lang="en">
@@ -65,14 +55,14 @@
 
     <?php
         // echo "code running";
-        // echo "<table>";
-        // while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
-        //   $name   = $row['name'];
-        //   $address = $row['id'];
-        //   // $content = $row['content'];
-        //   echo "<tr><td>".$name."</td><td>".$address."</td><td>".$content."</td></tr>";
-        // }
-        // echo "</table>";
+        echo "<table>";
+        while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
+          $name   = $row['name'];
+          $address = $row['id'];
+          // $content = $row['content'];
+          echo "<tr><td>$name</td><td>$address</td></tr>";
+        }
+        echo "</table>";
     ?>
     Welcome, you're already logged in :)
 
