@@ -95,6 +95,7 @@
                   $title = $courseResult["title"];
                   $description = $courseResult["description"];
                   $instructor_id = $courseResult["instructor_id"];
+                  $img = $courseResult["img"];
 
                   //
                   // FETCH INSTRUCTOR
@@ -112,7 +113,7 @@
                   }
               }
               echo "<a href='view_course.php?id=$course_id'>";
-              echo "<img style='height: 200px' src='img/1.jpg'/>";
+              echo "<img style='height: 200px' src='img/$img'/>";
               echo "<h3 class='font' style='font-weight: bold'>$title</h3>";
               echo "<h5>BY ".strtoupper($instructor_name)."</h5>";
               // echo "<p>$description</p>";
