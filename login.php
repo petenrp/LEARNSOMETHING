@@ -16,8 +16,7 @@
     <form class="form-signin">
       <div class="text-center mb-4">
         <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Welcome Stranger!</h1>
-        <p> <code>Warning!</code> explaning the detail here </a></p>
+        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
       </div>
 
       <div class="form-label-group">
@@ -37,8 +36,7 @@
             </div>
 
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit" href="account.html">Sign in</button>
-      <p class="mt-5 mb-3 text-muted text-center">© Daily Programming of Joy (DPJ) </p>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" href="account.html">LOGIN</button>
     </form>
 
 
