@@ -62,7 +62,7 @@
           // $content = $row['content'];
           // echo "<tr><td>$name</td><td>$address</td></tr>";
           echo "<h1>$name</h1>";
-          echo "<br/>$address";
+          echo "<p>$address</p>";
           echo "<br/>";
         }
         echo "</table>";
