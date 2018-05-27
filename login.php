@@ -21,8 +21,8 @@
       </div>
 
       <div class="form-label-group">
-        <input type="Username" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
-        <label for="inputUsername">Username</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required="" autofocus="">
+        <label for="inputEmail">Email</label>
       </div>
 
       <div class="form-label-group">

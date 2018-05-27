@@ -2,10 +2,10 @@
     session_start();
     
     $connection = mysqli_connect("sleepy.hackathon.ilab.sit.kmutt.ac.th","root","1212312121");
-    mysqli_select_db($connection, "std60130500233");
+    mysqli_select_db($connection, "LearnSomething");
     
-    $strSQL = "SELECT * FROM registration WHERE Username = '".mysqli_real_escape_string($connection, $_POST['txtUsername'])."' 
-	and Password = '".mysqli_real_escape_string($connection, $_POST['txtPassword'])."'";
+    $strSQL = "SELECT * FROM users WHERE email = '".mysqli_real_escape_string($connection, $_POST['inputEmail'])."' 
+	and password = '".mysqli_real_escape_string($connection, $_POST['inputPassword'])."'";
     
     $objQuery = mysqli_query($connection, $strSQL);
 	$objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
