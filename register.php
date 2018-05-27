@@ -15,37 +15,42 @@
     <title>Login</title>
   </head>
 <body>
-    <p class="top-Register">Register</p>
-        <div class="regis-Form">
-            <form method="post" action="/perform_register.php">
-                <div class="form-label-group">
-                    <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required autofocus>
-                    <label for="inputEmail">Email</label>
-                </div>
-                
-                <textarea rows="1" cols="30" placeholder="Firstname..."></textarea>
-                <br>
-                <p>Surname</p>
-                <textarea rows="1" cols="30" placeholder="Surname..."></textarea>
-                <br>
-                <p>Email</p>
-                <textarea name="inputEmail" rows="1" cols="50" placeholder="example@example.com"></textarea>
-                <br>
-                <p>Password</p>
-                <textarea name="inputPassword" rows="1" cols="50" placeholder="password..."></textarea>
-                <br>
-                <p>Confirm password</p>
-                <textarea name="inputConfirmPassword" rows="1" cols="50" placeholder="re-enter your password..."></textarea>
-                <br>
-                
-            </form> 
-        </div>
-    <hr>
-        
+    <form class="form-signin" name="Register_Form" method="post" action="perform_Register.php">
+      <div class="mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+      </div>
 
-    <input type="submit" value="Submit">
+      <div class="form-label-group">
+        <input id="inputFirstname" name="inputFirstname" class="form-control" placeholder="Firstname" required autofocus>
+        <label for="inputFirstname">Firstname</label>
+      </div>
+
+      <div class="form-label-group">
+        <input id="inputLastname" name="inputLastname" class="form-control" placeholder="Lastname" required autofocus>
+        <label for="inputLastname">Lastname</label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required autofocus>
+        <label for="inputEmail">Email</label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
+        <label for="inputPassword">Password</label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="password" id="inputConfirmPassword" name="inputConfirmPassword" class="form-control" placeholder="ConfirmPassword" required>
+        <label for="inputConfirmPassword">ConfirmPassword</label>
+      </div>
+
+      <input class="btn btn-lg btn-primary btn-block" type="submit" name="Submit" value="Submit" />
+
+    <!-- <input type="submit" value="Submit"> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
+
 </html>
