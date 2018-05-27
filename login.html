@@ -1,6 +1,6 @@
 <?php
   if ($_SESSION["UserID"] != null) {
-    header("location:homepage.php");
+    header("location:index.php");
   }
 ?>
 

@@ -52,7 +52,7 @@
 
 		session_write_close();
 			
-		header("location:homepage.php");
+		header("location:index.php");
 	}
 	mysqli_close($connection);
 ?>
