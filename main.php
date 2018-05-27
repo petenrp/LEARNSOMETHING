@@ -1,3 +1,12 @@
+<?php
+  if ($_SESSION["UserID"] == null) {
+    header("location:main.php");
+  }
+  else {
+      echo $_SESSION["UserID"];
+  }
+?>
+
 <html lang="en">
   <head>
     <title>Please login</title>
