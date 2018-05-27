@@ -10,7 +10,7 @@
     $connection = mysqli_connect("localhost","root","1212312121");
     mysqli_select_db($connection, "LearnSomething");
 
-    echo $_POST['id'];
+    echo $_GET['id'];
     
     // $strSQL = "SELECT * FROM purchased WHERE email = '".mysqli_real_escape_string($connection, $_POST['inputEmail'])."' 
 	// and password = '".mysqli_real_escape_string($connection, md5($_POST['inputPassword']))."'";
