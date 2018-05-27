@@ -1,14 +1,17 @@
 <html>
 <head>
-<style>
-    /* <link rel="stylesheet" href="> */
-</style>
-    <!-- <link rel="stylesheet" type"text/css" href="register_style.css"> -->
-    <link rel="stylesheet" href="register_style.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="register_style.css">
+<link href="form-validation.css" rel="stylesheet">
+
+
 </head>
 <body>
-    <!-- background-color: black; -->
     <p class="topRegister">Register</p>
-    <p align="right"> isus</p>
+        <div>
+            <p>Firstname</p>
+            <form action="/action_page.php"
+        </div>
 </body>
 </html>
