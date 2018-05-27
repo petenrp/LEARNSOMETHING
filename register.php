@@ -15,7 +15,7 @@
     <title>Login</title>
   </head>
 <body>
-    <form class="form-signin" name="Register_Form" method="post" action="perform_Register.php">
+    <form class="form-signin" name="Register_Form" method="post" action="perform_register.php" onsubmit="return validateForm()">
       <div class="mb-4">
         <h1 class="h3 mb-3 font-weight-normal">Register</h1>
       </div>
@@ -61,8 +61,10 @@
           function validatePassword() {
             if(password.value != confirm_password.value) {
               confirm_password.setCustomValidity("Passwords Don't Match");
+              return false;
             } else {
-              confirm_password.setCustomValidity('');
+              // confirm_password.setCustomValidity('');
+              return true;
             }
           }
 
