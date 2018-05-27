@@ -27,6 +27,24 @@
 	if(!$objResult) {
         header("location:notPurchasedCourse.php?id=$course_id");
     }
+
+    //
+    // QUERY coure data
+    //
+    $course_id = $_GET['id'];
+
+    $strSQL = "SELECT * FROM courses WHERE id = '$course_id'";
+
+    $objQuery = mysqli_query($connection, $strSQL);
+    $objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
+
+    if(!$objResult) {
+        // ERROR: just redirect to the index page
+        header("location:index.php");
+    }
+    else {
+        $title = $objResult["title"];
+    }
 ?>
 
 <html>
@@ -59,7 +77,7 @@
   src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
   frameborder="0"></iframe>
         <div style="margin: 30px 30px">
-            <h3 class="font">Course Title</h3>
+            <h3 class="font"><?php echo $title ?></h3>
             <div class="indent50 font"> <b>description:</b> bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~ bla bla bla~~~</div>
             <br>
             <div class="indent50 font"><b>by:_______</b></div><br>
