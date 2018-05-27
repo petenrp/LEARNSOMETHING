@@ -111,7 +111,7 @@
             <br>
             <br>
 
-            <button class="button" style="float: right">Buy</button>
+            <button class="button" style="float: right">$99.99</button>
 
             <!-- <button class="button" style="float: right">Buy</button> -->
             <br>

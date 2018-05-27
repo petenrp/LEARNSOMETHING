@@ -104,6 +104,8 @@
                 <?php echo $description ?>
             </div>
             
+            <p class="button" style="float: right">PURCHASED</p>
+            
             <br>
             <br>
 
@@ -112,7 +114,6 @@
             (workshop-link)
             <hr>
             
-            <br>
             <br>
 
             <h3 class="font">Lessons</h3>
