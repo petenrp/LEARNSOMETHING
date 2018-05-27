@@ -25,23 +25,6 @@
 <body>
     <p class="top-Register">Register</p>
         <div class="regis-Form">
-<<<<<<< HEAD:register.html
-            <form method="post" action="/perform_register.php">
-                <div class="form-label-group">
-                        <input name="inputFirstname" class="form-control" placeholder="Firstname" required autofocus>
-                        <label for="inputFirstname">Firstname</label>
-                </div>
-                <!-- <p>Firstname</p>
-                <textarea name="inputFirstname"  rows="1" cols="30" placeholder="Firstname..."></textarea>
-                <br> -->
-                <div class="form-label-group">
-                        <input name="inputSurname" class="form-control" placeholder="Surname" required >
-                        <label for="inputSurname">Surname</label>
-                </div>
-                <!-- <p>Surname</p>
-                <textarea name="inputSurname" rows="1" cols="30" placeholder="Surname..."></textarea>
-                <br> -->
-=======
             <form action="/action_page.php">
                 <div class="form-label-group">
                     <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required autofocus>
@@ -53,7 +36,6 @@
                 <p>Surname</p>
                 <textarea rows="1" cols="30" placeholder="Surname..."></textarea>
                 <br>
->>>>>>> f4ea0a22ff989ee07c2ceec3a8d142453f7330d3:register.php
                 <p>Email</p>
                 <textarea name="inputEmail" rows="1" cols="50" placeholder="example@example.com"></textarea>
                 <br>
