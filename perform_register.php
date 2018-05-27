@@ -7,6 +7,10 @@
     // $password = mysqli_real_escape_string($connection, $_POST['inputPassword']);
     $password = md5($_POST['inputPassword']);
 
+	if ($first_name == null || $last_name == null || $email == null || $password == null) {
+		header("location:register.php");
+	}
+
 	$connection = mysqli_connect("localhost","root","1212312121");
     mysqli_select_db($connection, "LearnSomething");
 
