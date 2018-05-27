@@ -18,7 +18,7 @@
     // echo "course_id = $course_id\n";
     // echo "user_id = $user_id";
 
-    $strSQL = "SELECT * FROM purchased WHERE course_id = '$course_id' and user_id = '$user_id'";
+    $strSQL = "SELECT * FROM purchase WHERE course_id = '$course_id' and user_id = '$user_id'";
     
     // echo $strSQL;
 
