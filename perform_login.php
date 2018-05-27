@@ -49,7 +49,7 @@
 
 			session_write_close();
 			
-			header("location:homepage.html");
+			header("location:homepage.php");
 	}
 	mysqli_close($connection);
 ?>
