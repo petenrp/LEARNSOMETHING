@@ -97,8 +97,9 @@
             </h1>
             <h4 class="font">
                 BY &#9;<b><?php echo strtoupper($instructor_name) ?></b>
+                <p style="background: #424242; text-color: #ffffff">PURCHASED</p>
             </h4>
-            <p class="button">PURCHASED</p>
+            <br>
             <br>
             <div class="indent50 font" style="font-size: 18px">
                 <!--<b>description:</b>-->
