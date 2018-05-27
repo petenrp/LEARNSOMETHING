@@ -18,19 +18,19 @@
 
             <h3>Lession</h3>
             <div class="h3_font_size, indent30"><b>Lession 1: </b>bla bla bla bla
-            <button class="button"PLAY</button>
+            <button class="button" style="float: right">PLAY</button>
             </div><br>
             <hr>
             <br>
 
             <div class="h3_font_size, indent30"><b>Lession 2: </b>bla bla bla bla
-            <button class="button"PLAY</button>
+            <button class="button" style="float: right">PLAY</button>
             </div><br>
             <hr>
             <br>
 
             <div class="h3_font_size, indent30"><b>Lession 3: </b>bla bla bla bla
-            <button class="button"PLAY</button>
+            <button class="button" style="float: right">PLAY</button>
             </div><br>
             <hr>
             <br>
