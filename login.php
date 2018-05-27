@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="login_style.css">
 
     <!-- FONT -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit|Karla">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
 
     <title>Login</title>
   </head>
-  <body style="background-color:#F4F1ED!important ">
-
+  
+  <body>
+    <!-- <body background = "img/bg1.jpg"> -->
     <form class="form-signin" name="form1" method="post" action="perform_login.php">
       <div class="mb-4">
         <h1 class="h3 mb-3 font-weight-normal">Login</h1>
@@ -43,10 +44,12 @@
       </div>
       <input class="btn btn-lg btn-primary btn-block" type="submit" name="Submit" value="LOGIN" />
       <div align="right">
+        <br>
           NOT MEMBER?
           <!-- <div class="Register-Link"> -->
             <a href="register.php">REGISTER</a>
           <!-- </div> -->
+        </br>
       </div>
     </form>
 

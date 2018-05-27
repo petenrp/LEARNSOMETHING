@@ -136,7 +136,7 @@
     </center>
 
     <footer style="background-color: #191917; height:100px">
-        <div style="margin-top: 50px; font-family: 'Tajawal', sans-serif; font-size: 25px; text-align: center">SLEPPYTEAM CO,.Ltd</div>
+        <div style="margin-bottom: 10px; font-family: 'Tajawal', sans-serif; font-size: 25px; text-align: center">SLEPPYTEAM CO,.Ltd</div>
     </footer>                        
     
     <!-- <script src="jquery.min.js"></script> -->
