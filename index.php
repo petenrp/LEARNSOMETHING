@@ -116,8 +116,6 @@
         // echo "code running";
         echo "<div style='display: flex; align-content: space-between;'>";
         while ($row = mysqli_fetch_array($allCourseQuery, MYSQLI_ASSOC)) {
-          echo "<a href='view_course.php?id=$course_id' class='item course-item-2'>";
-          
           // GRAB ALL THE PARAMS
           $course_id = $row["id"];
           $title = $row["title"];
@@ -126,7 +124,9 @@
           $img = $row["img"];
           $price = $row["price"];
           $currency = $row["currency"];
-
+          
+          echo "<a href='view_course.php?id=$course_id' class='item course-item-2'>";
+          
           //
           // FETCH INSTRUCTOR
           //
