@@ -25,6 +25,7 @@
     // ALL COURSEs
     $strSQL = "SELECT * FROM courses";
     $allCourseQuery = mysqli_query($connection, $strSQL);
+    $allCourseResult = mysqli_fetch_array($courseQuery, MYSQLI_BOTH);
 ?>
 
 <!DOCTYPE html>
@@ -118,11 +119,11 @@
           echo "<div class='item'>";
           
           // GRAB ALL THE PARAMS
-          $title = $courseResult["title"];
-          $description = $courseResult["description"];
-          $instructor_id = $courseResult["instructor_id"];
-          $img = $courseResult["img"];
-          $price = $courseResult["price"];
+          $title = $allCourseResult["title"];
+          $description = $allCourseResult["description"];
+          $instructor_id = $allCourseResult["instructor_id"];
+          $img = $allCourseResult["img"];
+          $price = $allCourseResult["price"];
 
           //
           // FETCH INSTRUCTOR
