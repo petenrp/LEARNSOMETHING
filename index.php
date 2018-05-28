@@ -141,7 +141,7 @@
               $instructor_name = $instructorResult["name"];
           }
           
-          echo "div";
+          echo "<div>";
           echo "<img style='width: 100%' src='img/$img'/>";
           echo "<h3 class='font' style='font-weight: bold'>$title</h3>";
           echo "<h5>BY ".strtoupper($instructor_name)."</h5>";
