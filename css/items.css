@@ -1,6 +1,13 @@
+/* a {
+    color: #424242;
+} */
 .item {
+    background: #f0f0f0;
     padding: 12px;
     border-radius: 8px;
+}
+.item a {
+    color: #424242;
 }
 .item:hover {
     background: #00000010
@@ -9,10 +16,12 @@
     background: #00000033
 }
 .course-item {
+    color: #424242;
     height: 200px;
 }
 
 .course-item-2 {
+    color: #424242;
     width: 250px;
     margin: 10px 24px;
 }

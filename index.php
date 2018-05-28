@@ -75,7 +75,7 @@
         <?php
             // echo "code running";
             while ($row = mysqli_fetch_array($myCourseQuery, MYSQLI_ASSOC)) {
-              echo "<div class='item'>";
+              echo "<div class='item' style='color: #424242;'>";
               $course_id = $row['course_id'];
 
               //
@@ -112,9 +112,11 @@
               }
               echo "<a href='view_course.php?id=$course_id'>";
               echo "<img style='height: 200px' src='img/$img'/>";
-              echo "<h3 class='font' style='font-weight: bold'>$title</h3>";
-              echo "<h5>BY ".strtoupper($instructor_name)."</h5>";
+              echo "<h3 class='font' style='font-weight: bold; color: #424242'>$title</h3>";
+              echo "<h5 style='color: #424242'>BY ".strtoupper($instructor_name)."</h5>";
               // echo "<p>$description</p>";
+
+              echo "<p style='background: #ebebeb; color: #424242; width: fit-content; padding: 2 8px; margin-top: 12px; float: right'>PURCHASED</p>";
               echo "</a>";
               echo "</div>";
             }
@@ -130,7 +132,7 @@
 
     <?php
         // echo "code running";
-        echo "<div class='container' style='display: flex; align-content: space-between;'>";
+        echo "<div class='container' style='display: flex; flex-wrap: wrap; color: #424242;'>";
         while ($row = mysqli_fetch_array($allCourseQuery, MYSQLI_ASSOC)) {
           // GRAB ALL THE PARAMS
           $course_id = $row["id"];
@@ -160,9 +162,9 @@
           
           echo "<div>";
           echo "<img style='width: 100%' src='img/$img'/>";
-          echo "<h3 class='font' style='font-weight: bold'>$title</h3>";
-          echo "<h5>BY ".strtoupper($instructor_name)."</h5>";
-          echo "<b><h4 style='float: right'>$currency$price</h4></b>";
+          echo "<h3 class='font' style='font-weight: bold; color: #424242;'>$title</h3>";
+          echo "<h5 style='color: #424242'>BY ".strtoupper($instructor_name)."</h5>";
+          echo "<b><h4 style='background: #ebebeb; color: #424242; width: fit-content; padding: 2 8px; margin-top: 12px; float: right'>$currency$price</h4></b>";
           // echo "<p>$description</p>";
           echo "</div>";
           echo "</a>";
