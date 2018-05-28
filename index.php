@@ -154,7 +154,7 @@
         echo "</div>";
     ?>
 
-    <center>
+    <!-- <center>
         <img class="course-item-2" src="img/1.jpg"/>
         <img class="course-item-2" src="img/2.jpg"/>
         <img class="course-item-2" src="img/3.jpg"/>
@@ -207,7 +207,7 @@
         <img class="course-item-2" src="img/10.jpg"/>
         <img class="course-item-2" src="img/11.jpg"/>
         <img class="course-item-2" src="img/12.jpg"/>
-    </center>
+    </center> -->
 
     <footer style="background-color: #191917; padding-top: 17px; padding-bottom: 12px">
         <div style="font-family: 'Tajawal', sans-serif; font-size: 25px; text-align: center">SLEPPYTEAM CO.,Ltd.</div>
