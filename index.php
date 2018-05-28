@@ -146,7 +146,7 @@
           echo "<img style='width: 100%' src='img/$img'/>";
           echo "<h3 class='font' style='font-weight: bold'>$title</h3>";
           echo "<h5>BY ".strtoupper($instructor_name)."</h5>";
-          echo "<b><h5>$currency $price</h5></b>";
+          echo "<b><h4 style='float: right'>$currency $price</h4></b>";
           // echo "<p>$description</p>";
           echo "</div>";
           echo "</a>";
