@@ -71,7 +71,7 @@
 
     <p style="font-family: 'Tajawal', sans-serif; font-weight: bold; font-size: 40px; margin: 40px 75px; padding-top: 56px">My Course</p>
 
-    <div class="container owl-carousel owl-theme">
+    <div class="container owl-carousel owl-theme" style="display: flex; flex-wrap: wrap;">
         <?php
             // echo "code running";
             while ($row = mysqli_fetch_array($myCourseQuery, MYSQLI_ASSOC)) {
