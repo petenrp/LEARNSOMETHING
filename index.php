@@ -75,7 +75,7 @@
         <?php
             // echo "code running";
             while ($row = mysqli_fetch_array($myCourseQuery, MYSQLI_ASSOC)) {
-              echo "<div class='item'> style='color: #424242;'";
+              echo "<div class='item' style='color: #424242;'>";
               $course_id = $row['course_id'];
 
               //
