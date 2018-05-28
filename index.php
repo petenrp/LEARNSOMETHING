@@ -51,7 +51,11 @@
                 <img src="img/weblogo.png" alt="logo" style="Height:20px;">
             </a>
 
-            <div class="dropdown">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php echo $_SESSION["email"]; ?></a></li>
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>LOG OUT</a></li>
+            </ul>
+            <!-- <div class="dropdown text-right">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu">
@@ -59,7 +63,7 @@
                 <li><a href="#">CSS</a></li>
                 <li><a href="#">JavaScript</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>    
     </nav>
 
