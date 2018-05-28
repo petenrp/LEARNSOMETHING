@@ -116,7 +116,7 @@
         // echo "code running";
         echo "<div style='display: flex; align-content: space-between;'>";
         while ($row = mysqli_fetch_array($allCourseQuery, MYSQLI_ASSOC)) {
-          echo "<div class='item course-item-2'>";
+          echo "<a href='view_course.php?id=$course_id' class='item course-item-2'>";
           
           // GRAB ALL THE PARAMS
           $course_id = $row["id"];
@@ -141,13 +141,13 @@
               $instructor_name = $instructorResult["name"];
           }
           
-          echo "<a href='view_course.php?id=$course_id'>";
-          echo "<img style='height: 200px' src='img/$img'/>";
+          echo "div";
+          echo "<img style='width: 100%' src='img/$img'/>";
           echo "<h3 class='font' style='font-weight: bold'>$title</h3>";
           echo "<h5>BY ".strtoupper($instructor_name)."</h5>";
           // echo "<p>$description</p>";
-          echo "</a>";
           echo "</div>";
+          echo "</a>";
         }
         echo "</div>";
     ?>
