@@ -75,7 +75,7 @@
         <?php
             // echo "code running";
             while ($row = mysqli_fetch_array($myCourseQuery, MYSQLI_ASSOC)) {
-              echo "<div class='item'>";
+              echo "<div class='item'> style='color: #424242;'";
               $course_id = $row['course_id'];
 
               //
@@ -134,7 +134,7 @@
 
     <?php
         // echo "code running";
-        echo "<div class='container' style='display: flex; flex-wrap: wrap;'>";
+        echo "<div class='container' style='display: flex; flex-wrap: wrap; color: #424242;'>";
         while ($row = mysqli_fetch_array($allCourseQuery, MYSQLI_ASSOC)) {
           // GRAB ALL THE PARAMS
           $course_id = $row["id"];
