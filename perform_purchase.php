@@ -34,7 +34,7 @@
 			
 	// 	header("location:index.php");
 	// }
-	// header("location:view_course.php?id=$course_id");
+	header("location:view_course.php?id=$course_id");
 
 	mysqli_close($connection);
 ?>
