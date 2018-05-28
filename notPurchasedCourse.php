@@ -114,7 +114,7 @@
             <br>
             <br>
 
-            <a href="perform_purchase.php?course_id=<?php echo $course_id; ?>&user_id=<?php echo $user_id; ?>" class="button" style="float: right"><?php echo "$currency$price" ?></button>
+            <a href="perform_purchase.php?course_id=<?php echo $course_id; ?>&user_id=<?php echo $user_id; ?>" class="button" style="float: right"><?php echo "$currency$price" ?></a>
 
             <!-- <button class="button" style="float: right">Buy</button> -->
             <br>
