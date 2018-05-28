@@ -1,6 +1,6 @@
 .item {
     padding: 12px;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 .item:hover {
     background: #00000010
