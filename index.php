@@ -25,7 +25,7 @@
     // ALL COURSEs
     $strSQL = "SELECT * FROM courses";
     $allCourseQuery = mysqli_query($connection, $strSQL);
-    $allCourseResult = mysqli_fetch_array($courseQuery, MYSQLI_BOTH);
+    $allCourseResult = mysqli_fetch_array($allCourseQuery, MYSQLI_BOTH);
 ?>
 
 <!DOCTYPE html>
