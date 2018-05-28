@@ -114,8 +114,8 @@
 
     <?php
         // echo "code running";
+        echo "<center>";
         while ($row = mysqli_fetch_array($allCourseQuery, MYSQLI_ASSOC)) {
-          echo "<center>";
           echo "<div class='item course-item-2'>";
           
           // GRAB ALL THE PARAMS
@@ -147,8 +147,8 @@
           // echo "<p>$description</p>";
           echo "</a>";
           echo "</div>";
-          echo "</center>";
         }
+        echo "</center>";
     ?>
 
     <center>
