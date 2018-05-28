@@ -2,8 +2,12 @@
     color: #424242;
 } */
 .item {
+    color: #424242;
     padding: 12px;
     border-radius: 8px;
+}
+.item a {
+    color: #424242;
 }
 .item:hover {
     background: #00000010
