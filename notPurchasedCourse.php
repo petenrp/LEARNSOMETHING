@@ -44,9 +44,9 @@
         $title = $objResult["title"];
         $description = $objResult["description"];
         $instructor_id = $objResult["instructor_id"];
-        $img = $row["img"];
-        $price = $row["price"];
-        $currency = $row["currency"];
+        $img = $objResult["img"];
+        $price = $objResult["price"];
+        $currency = $objResult["currency"];
     }
 
     //
