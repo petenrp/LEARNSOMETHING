@@ -132,7 +132,7 @@
 
     <?php
         // echo "code running";
-        echo "<div style='display: flex; flex-wrap: wrap; justify-content: space-around; color: #424242;'>";
+        echo "<div style='display: flex; flex-wrap: wrap; justify-content: space-evenly; color: #424242;'>";
         while ($row = mysqli_fetch_array($allCourseQuery, MYSQLI_ASSOC)) {
           // GRAB ALL THE PARAMS
           $course_id = $row["id"];

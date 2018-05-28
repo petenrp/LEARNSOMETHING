@@ -2,7 +2,9 @@
     color: #424242;
 } */
 .item {
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
+    border-color: #00000010;
+    border-width: 1px;
     padding: 12px;
     border-radius: 8px;
 }
