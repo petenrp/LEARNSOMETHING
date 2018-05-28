@@ -116,7 +116,7 @@
               echo "<h5 style='color: #424242'>BY ".strtoupper($instructor_name)."</h5>";
               // echo "<p>$description</p>";
 
-              echo "<p style='background: #ebebeb; color: #424242; width: fit-content; padding: 2px 8px; margin-top: 12px; float: right'>PURCHASED</p>";
+              echo "<p style='background: #ebebeb; color: #424242; width: fit-content; padding: 2px 8px; margin-left: auto'>PURCHASED</p>";
               echo "</a>";
               echo "</div>";
             }
