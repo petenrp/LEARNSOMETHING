@@ -14,7 +14,8 @@
 
     <title>Login</title>
   </head>
-  <body style="font-family: Tajawal, sans-serif;">
+  <body style="font-family: Tajawal, sans-serif; color:  #ffffff80; background:  #191917;">
+    <img src="img/weblogo.png" alt="logo" style="Height:20px;">
     <form class="form-signin" name="Register_Form" method="post" action="perform_register.php" onsubmit="return validateForm()">
       <div class="mb-4">
         <h1 class="h3 mb-3 font-weight-normal">Register</h1>
@@ -45,7 +46,7 @@
         <label for="inputConfirmPassword">Confirm Password</label>
       </div>
 
-      <input class="btn btn-lg btn-primary btn-block" type="submit" name="Submit" value="Submit" />
+      <input class="btn btn-lg btn-warning btn-block" type="submit" name="Submit" value="Submit" />
 
     <!-- <input type="submit" value="Submit"> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

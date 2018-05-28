@@ -20,8 +20,9 @@
     <title>Login</title>
   </head>
   
-  <body style:"font-family: Tajawal, sans-serif;">
+  <body style:"font-family: Tajawal, sans-serif; color:  #ffffff80; background:  #191917;">
     <!-- <body background = "img/bg1.jpg"> -->
+    <img src="img/weblogo.png" alt="logo" style="Height:20px;">
     <form class="form-signin" name="form1" method="post" action="perform_login.php">
       <div class="mb-4">
         <h1 class="h3 mb-3 font-weight-normal">Login</h1>
@@ -48,7 +49,7 @@
           <input type="checkbox" checked="checked" value="remember-me" class="txt2"> Remember me 
         </div>
       </div>
-      <input class="btn btn-lg btn-primary btn-block" type="submit" name="Submit" value="LOGIN" />
+      <input class="btn btn-lg btn-warning btn-block" type="submit" name="Submit" value="LOGIN" />
       <div align="right">
         <br>
           NOT MEMBER?
