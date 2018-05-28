@@ -20,7 +20,7 @@
     <title>Login</title>
   </head>
   
-  <body style:"font-family: Tajawal, sans-serif; color:  #ffffff80;">
+  <body style:"font-family: Tajawal, sans-serif;">
     <!-- <body background = "img/bg1.jpg"> -->
     <!-- <img src="img/weblogo.png" alt="logo" style="Height:20px;"> -->
     <form class="form-signin" name="form1" method="post" action="perform_login.php">
