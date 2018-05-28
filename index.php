@@ -64,8 +64,7 @@
                 <li><a href="#">CSS</a></li>
                 <li><a href="#">JavaScript</a></li>
                 </ul>
-            </div> -->
-        </div>    
+            </div> --> 
     </nav>
 
     <p style="font-family: 'Tajawal', sans-serif; font-weight: bold; font-size: 40px; margin: 40px 75px; padding-top: 56px">My Course</p>
