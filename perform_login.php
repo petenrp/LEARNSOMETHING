@@ -39,7 +39,8 @@
 	if(!$objResult)
 	{
             // echo "incorrect Username or Password";
-            header("location:login.php?incorrectPassword=true");
+            $email = $_POST['inputEmail'];
+            header("location:login.php?incorrectPassword=true?email=$email");
 	}
 	else
 	{

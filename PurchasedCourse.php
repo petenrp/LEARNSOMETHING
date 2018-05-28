@@ -125,7 +125,7 @@
                 <h4>
                     Lesson 1: bla bla bla bla
                 </h4>
-                <button class="button" style="float: right">PLAY</button>
+                <a href href="video_page.php" class="button" style="float: right">PLAY</a>
             </div>
             <br><hr><br>
 
@@ -134,6 +134,7 @@
                     Lesson 2: bla bla bla bla
                 </h4>
                 <button class="button" style="float: right">PLAY</button>
+                <a href href="video_page.php" class="button" style="float: right">PLAY</a>
             </div>
             <br><hr><br>
 
@@ -142,6 +143,7 @@
                     Lesson 3: bla bla bla bla
                 </h4>
                 <button class="button" style="float: right">PLAY</button>
+                <a href href="video_page.php" class="button" style="float: right">PLAY</a>
             </div>
             <br><hr><br>
 
