@@ -44,6 +44,9 @@
         $title = $objResult["title"];
         $description = $objResult["description"];
         $instructor_id = $objResult["instructor_id"];
+        $img = $row["img"];
+        $price = $row["price"];
+        $currency = $row["currency"];
     }
 
     //
@@ -111,7 +114,7 @@
             <br>
             <br>
 
-            <button class="button" style="float: right">$99.99</button>
+            <button class="button" style="float: right"><?php echo "$currency$price" ?></button>
 
             <!-- <button class="button" style="float: right">Buy</button> -->
             <br>
