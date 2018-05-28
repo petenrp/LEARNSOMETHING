@@ -46,7 +46,7 @@
 
   <body style="background-color:#F4F1ED">
     <nav class="navbar navbar-inverse navbar-fixed-top" style="width: 100%; height:70px; background: #191917">
-        <div class="navbar-header">
+        <div class="container navbar-header">
             <a class="navbar-brand" href="http://sleepy.hackathon.ilab.sit.kmutt.ac.th" style="margin: 12px 0; height: 100%;">
                 <img src="img/weblogo.png" alt="logo" style="Height:20px;">
             </a>
@@ -70,7 +70,7 @@
 
     <p style="font-family: 'Tajawal', sans-serif; font-weight: bold; font-size: 40px; margin: 40px 75px; padding-top: 56px">My Course</p>
 
-    <div class="owl-carousel owl-theme">
+    <div class="container owl-carousel owl-theme">
         <?php
             // echo "code running";
             while ($row = mysqli_fetch_array($myCourseQuery, MYSQLI_ASSOC)) {
@@ -129,7 +129,7 @@
 
     <?php
         // echo "code running";
-        echo "<div style='display: flex; align-content: space-between;'>";
+        echo "<div class='container' style='display: flex; align-content: space-between;'>";
         while ($row = mysqli_fetch_array($allCourseQuery, MYSQLI_ASSOC)) {
           // GRAB ALL THE PARAMS
           $course_id = $row["id"];
