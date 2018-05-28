@@ -164,7 +164,7 @@
           echo "<img style='width: 100%' src='img/$img'/>";
           echo "<h3 class='font' style='font-weight: bold; color: #424242;'>$title</h3>";
           echo "<h5 style='color: #424242'>BY ".strtoupper($instructor_name)."</h5>";
-          echo "<b><h4 style='background: #ebebeb; color: #424242; width: fit-content; padding: 2 8px; margin-top: 12px; float: right'>$currency$price</h4></b>";
+          echo "<b><h4 style='background: #FFC200; color: #333333; width: fit-content; padding: 2 8px; margin-top: 12px; float: right'>$currency$price</h4></b>";
           // echo "<p>$description</p>";
           echo "</div>";
           echo "</a>";
