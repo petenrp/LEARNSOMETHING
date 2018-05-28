@@ -119,6 +119,7 @@
           echo "<div class='item course-item-2'>";
           
           // GRAB ALL THE PARAMS
+          $course_id = $row["id"];
           $title = $row["title"];
           $description = $row["description"];
           $instructor_id = $row["instructor_id"];
