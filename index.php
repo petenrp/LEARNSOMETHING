@@ -23,9 +23,8 @@
     $myCourseQuery = mysqli_query($connection, $strSQL);
 
     // ALL COURSEs
-    $strSQL = "SELECT * FROM courses";
-    $allCourseQuery = mysqli_query($connection, $strSQL);
-    $allCourseResult = mysqli_fetch_array($allCourseQuery, MYSQLI_BOTH);
+    $strSQL2= "SELECT * FROM courses";
+    $allCourseQuery = mysqli_query($connection, $strSQL2);
 ?>
 
 <!DOCTYPE html>
@@ -119,11 +118,11 @@
           echo "<div class='item'>";
           
           // GRAB ALL THE PARAMS
-          $title = $allCourseResult["title"];
-          $description = $allCourseResult["description"];
-          $instructor_id = $allCourseResult["instructor_id"];
-          $img = $allCourseResult["img"];
-          $price = $allCourseResult["price"];
+          $title = $row["title"];
+          $description = $row["description"];
+          $instructor_id = $row["instructor_id"];
+          $img = $row["img"];
+          $price = $row["price"];
 
           //
           // FETCH INSTRUCTOR
