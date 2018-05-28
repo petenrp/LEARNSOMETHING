@@ -32,13 +32,14 @@
     $strSQL = "SELECT * FROM users WHERE email = '".mysqli_real_escape_string($connection, $_POST['inputEmail'])."' 
 	and password = '".mysqli_real_escape_string($connection, md5($_POST['inputPassword']))."'";
     
-    echo $strSQL;
+    // echo $strSQL;
 
     $objQuery = mysqli_query($connection, $strSQL);
 	$objResult = mysqli_fetch_array($objQuery, MYSQLI_BOTH);
 	if(!$objResult)
 	{
-			echo "Username and Password Incorrect!";
+            // echo "incorrect Username or Password";
+            header("location:login.php?incorrectPassword=true");
 	}
 	else
 	{

@@ -37,6 +37,12 @@
         <label for="inputPassword">Password</label>
       </div>
 
+      <?php
+        if ($_GET["incorrectPassword"]) {
+          echo "<p style='color: red'>Incorrect username or password</p>";
+        }
+      ?>
+
       <div class="checkbox mb-3">
         <div>
           <input type="checkbox" checked="checked" value="remember-me" class="txt2"> Remember me 
