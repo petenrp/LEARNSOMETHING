@@ -46,11 +46,12 @@
 
   <body style="background-color:#F4F1ED">
     <nav class="navbar navbar-inverse navbar-fixed-top" style="width: 100%; height:70px; background: #191917">
-        <div class="container navbar-header">
-            <a class="navbar-brand" href="http://sleepy.hackathon.ilab.sit.kmutt.ac.th" style="margin: 12px 0; height: 100%;">
-                <img src="img/weblogo.png" alt="logo" style="Height:20px;">
-            </a>
-        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://sleepy.hackathon.ilab.sit.kmutt.ac.th" style="margin: 12px 0; height: 100%;">
+                    <img src="img/weblogo.png" alt="logo" style="Height:20px;">
+                </a>
+            </div>
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user" style="margin-right: 8px"></span><?php echo $_SESSION["email"]; ?></a></li>
@@ -64,7 +65,8 @@
                 <li><a href="#">CSS</a></li>
                 <li><a href="#">JavaScript</a></li>
                 </ul>
-            </div> --> 
+            </div>  -->
+        </div>
     </nav>
 
     <p style="font-family: 'Tajawal', sans-serif; font-weight: bold; font-size: 40px; margin: 40px 75px; padding-top: 56px">My Course</p>
