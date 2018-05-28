@@ -7,8 +7,8 @@
 	// 	header("location:login.php");
 	// }
 
-	$user_id = $GET['user_id'];
-	$course_id = $GET['course_id'];
+	$user_id = $_GET['user_id'];
+	$course_id = $_GET['course_id'];
 	
 	echo $course_id;
 	echo "\n";
