@@ -114,7 +114,7 @@
 
     <?php
         // echo "code running";
-        echo "<center>";
+        echo "<div style='display: flex; align-content: space-between;'>";
         while ($row = mysqli_fetch_array($allCourseQuery, MYSQLI_ASSOC)) {
           echo "<div class='item course-item-2'>";
           
@@ -149,7 +149,7 @@
           echo "</a>";
           echo "</div>";
         }
-        echo "</center>";
+        echo "</div>";
     ?>
 
     <center>
