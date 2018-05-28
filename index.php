@@ -53,8 +53,8 @@
         </div>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php echo $_SESSION["email"]; ?></a></li>
-                <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>LOG OUT</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user" style="margin-right: 8px"></span><?php echo $_SESSION["email"]; ?></a></li>
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-in" style="margin-right: 8px"></span>LOG OUT</a></li>
             </ul>
             <!-- <div class="dropdown text-right">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
