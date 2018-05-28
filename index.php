@@ -46,10 +46,11 @@
 
   <body style="background-color:#F4F1ED">
     <nav class="navbar navbar-inverse navbar-fixed-top" style="width: 100%; height:70px; background: #191917">
-        <div class="container">
+        <div class="navbar-header">
             <a class="navbar-brand" href="http://sleepy.hackathon.ilab.sit.kmutt.ac.th" style="margin: 12px 0; height: 100%;">
                 <img src="img/weblogo.png" alt="logo" style="Height:20px;">
             </a>
+        </div>
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php echo $_SESSION["email"]; ?></a></li>
