@@ -14,7 +14,7 @@
 
     <title>Login</title>
   </head>
-  <body style="font-family: Tajawal, sans-serif; color:  #ffffff80; background:  #191917 !important;">
+  <body style="font-family: Tajawal, sans-serif; color:  #ffffff80;">
     <!-- <img src="img/weblogo.png" alt="logo" style="Height:20px;"> -->
     <form class="form-signin" name="Register_Form" method="post" action="perform_register.php" onsubmit="return validateForm()">
       <div class="mb-4">
